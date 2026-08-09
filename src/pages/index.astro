@@ -4,6 +4,7 @@ import Nav from '../components/Nav.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import { getImage, Image } from 'astro:assets';
 import me from '../assets/me.jpg';
+import { projects } from '../data/projects';
 
 // Grab up to 6 photos for the teaser grid
 const imageFiles = import.meta.glob<{ default: ImageMetadata }>(
@@ -16,29 +17,7 @@ const teaserPhotos = await Promise.all(
   )
 );
 
-const featuredProjects = [
-  {
-    title: 'Project 1',
-    description: 'placeholder',
-    tags: [''],
-    github: 'https://github.com/BenWalker01',
-    featured: true,
-  },
-  {
-    title: 'Project 2',
-    description: 'placeholder',
-    tags: [''],
-    github: 'https://github.com/BenWalker01',
-    live: '#',
-    featured: true,
-  },
-  {
-    title: 'Project 3',
-    description: 'placeholder',
-    tags: [''],
-    github: 'https://github.com/BenWalker01',
-  },
-];
+const featuredProjects = projects.filter((project) => project.featured).slice(0, 3);
 ---
 
 <Layout title="Ben Walker" description="Software engineer & photographer based in the UK.">

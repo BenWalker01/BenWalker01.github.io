@@ -2,49 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import ProjectCard from '../components/ProjectCard.astro';
-
-const projects = [
-  {
-    title: 'Project 1',
-    description: 'placeholder',
-    tags: [''],
-    github: 'https://github.com/BenWalker01',
-    live: '#',
-    featured: true,
-  },
-  {
-    title: 'Project 2',
-    description: 'placeholder',
-    tags: [''],
-    github: 'https://github.com/BenWalker01',
-    featured: true,
-  },
-  {
-    title: 'Project 3',
-    description: 'placeholder',
-    tags: [''],
-    github: 'https://github.com/BenWalker01',
-  },
-  {
-    title: 'Project 4',
-    description: 'placeholder',
-    tags: [''],
-    github: 'https://github.com/BenWalker01',
-    live: '#',
-  },
-  {
-    title: 'Project 5',
-    description: 'placeholder',
-    tags: [''],
-    github: 'https://github.com/BenWalker01',
-  },
-  {
-    title: 'Project 6',
-    description: 'placeholder',
-    tags: [''],
-    github: 'https://github.com/BenWalker01',
-  },
-];
+import { projects } from '../data/projects';
 ---
 
 <Layout title="Projects" description="Software projects by Ben Walker.">
