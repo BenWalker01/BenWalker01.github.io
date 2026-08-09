@@ -2,30 +2,29 @@
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import { getImage } from 'astro:assets';
+import path from 'path';
+import fs from 'fs';
 
-// Add your photos to src/assets/photos/
-// Name them descriptively, e.g. wildlife-red-kite-01.jpg, aviation-spitfire-01.jpg
-// The category is derived from the filename prefix (before the first hyphen)
 const imageFiles = import.meta.glob<{ default: ImageMetadata }>(
   '../assets/photos/**/*.{jpg,jpeg,png,webp}',
   { eager: true }
 );
 
-// Build photo list: optimise a thumbnail for the grid, and a display version for the lightbox
-const photos = await Promise.all(
-  Object.entries(imageFiles).map(async ([path, mod]) => {
-    const image = mod.default;
-    const filename = path.split('/').pop()!;
+const photosDir = path.resolve(process.cwd(), 'src/assets/photos');
 
-    // Derive category from filename prefix, e.g. "wildlife-..." → "Wildlife"
+const photos = await Promise.all(
+  Object.entries(imageFiles).map(async ([filePath, mod]) => {
+    const image = mod.default;
+    const filename = filePath.split('/').pop()!;
+    const mtime = fs.statSync(path.join(photosDir, filename)).mtimeMs;
+
     const prefix = filename.split('-')[0];
     const category = prefix.charAt(0).toUpperCase() + prefix.slice(1);
 
-    // Thumbnail: 800px wide WebP for the grid (lazy loaded)
-    const thumb = await getImage({ src: image, width: 800, format: 'webp', quality: 80 });
-
-    // Display: 2000px wide WebP for the lightbox (loaded on click)
-    const display = await getImage({ src: image, width: 2000, format: 'webp', quality: 85 });
+    const [thumb, display] = await Promise.all([
+      getImage({ src: image, width: 800, format: 'webp', quality: 80 }),
+      getImage({ src: image, width: 2000, format: 'webp', quality: 85 }),
+    ]);
 
     return {
       thumb: thumb.src,
@@ -34,9 +33,13 @@ const photos = await Promise.all(
       width: display.attributes.width ?? image.width,
       height: display.attributes.height ?? image.height,
       category,
+      mtime,
     };
   })
 );
+
+// Newest first
+photos.sort((a, b) => b.mtime - a.mtime);
 
 const categories = ['All', ...new Set(photos.map(p => p.category))];
 ---
@@ -83,7 +86,6 @@ const categories = ['All', ...new Set(photos.map(p => p.category))];
               data-pswp-height={photo.height}
               data-category={photo.category}
               class="gallery-item group relative block overflow-hidden rounded-xl bg-zinc-800 border border-zinc-700/50 hover:border-violet-500/40 transition-all duration-300 break-inside-avoid"
-              target="_blank"
             >
               <div class="bg-zinc-800 relative overflow-hidden">
                 <img
@@ -128,13 +130,14 @@ const categories = ['All', ...new Set(photos.map(p => p.category))];
 
 <script>
   import PhotoSwipeLightbox from 'photoswipe/lightbox';
+  import PhotoSwipe from 'photoswipe';
   import 'photoswipe/style.css';
 
   function initLightbox() {
     return new PhotoSwipeLightbox({
       gallery: '#gallery',
       children: 'a.gallery-item:not(.hidden)',
-      pswpModule: () => import('photoswipe'),
+      pswpModule: PhotoSwipe,
       bgOpacity: 0.95,
       showHideAnimationType: 'zoom',
       padding: { top: 20, bottom: 20, left: 20, right: 20 },
