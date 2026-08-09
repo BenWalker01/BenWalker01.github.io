@@ -77,15 +77,16 @@ const categories = ['All', ...new Set(photos.map((p) => p.category))];
         </div>
 
         <div id="gallery" class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
-          {photos.map((photo) => (
+          {photos.map((photo, index) => (
             <a
               href={photo.src}
               data-pswp-width={photo.width}
               data-pswp-height={photo.height}
               data-category={photo.category}
-              class="gallery-item group relative block overflow-hidden rounded-xl bg-zinc-800 border border-zinc-700/50 hover:border-violet-500/40 transition-all duration-300 break-inside-avoid"
+              data-index={index}
+              class="gallery-item group relative block break-inside-avoid overflow-hidden rounded-xl border border-zinc-700/50 hover:border-violet-500/40 transition-all duration-300"
             >
-              <div class="bg-zinc-800 relative overflow-hidden">
+              <div class="relative overflow-hidden">
                 <img
                   src={photo.thumb}
                   alt={photo.alt}
@@ -105,6 +106,16 @@ const categories = ['All', ...new Set(photos.map((p) => p.category))];
               </div>
             </a>
           ))}
+        </div>
+
+        <div class="mt-10 text-center">
+          <button
+            id="show-more-btn"
+            type="button"
+            class="inline-flex items-center gap-2 border border-zinc-700 hover:border-violet-500/50 text-zinc-300 hover:text-violet-300 font-medium px-6 py-3 rounded-xl transition-all"
+          >
+            Show more
+          </button>
         </div>
       </>
     )}
@@ -146,10 +157,74 @@ const categories = ['All', ...new Set(photos.map((p) => p.category))];
 
   const filterBtns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
   const items = document.querySelectorAll<HTMLElement>('.gallery-item');
+  const showMoreBtn = document.getElementById('show-more-btn') as HTMLButtonElement | null;
+  const PAGE_SIZE = 12;
+  let activeFilter = 'All';
+
+  function itemMatchesFilter(item: HTMLElement) {
+    const cat = item.dataset.category!;
+    return activeFilter === 'All' || cat === activeFilter;
+  }
+
+  function refreshLightbox() {
+    lightbox.destroy();
+    lightbox = initLightbox();
+    lightbox.init();
+  }
+
+  function updateShowMoreButton() {
+    if (!showMoreBtn) return;
+    const hasMore = Array.from(items).some(
+      (item) => itemMatchesFilter(item) && item.classList.contains('paged-out')
+    );
+    showMoreBtn.hidden = !hasMore;
+  }
+
+  function resetForFilter() {
+    let shown = 0;
+    items.forEach((item) => {
+      if (!itemMatchesFilter(item)) {
+        item.classList.add('hidden', 'filtered-out');
+        item.classList.remove('paged-out');
+        return;
+      }
+
+      item.classList.remove('filtered-out');
+      if (shown < PAGE_SIZE) {
+        item.classList.remove('hidden', 'paged-out');
+        shown++;
+      } else {
+        item.classList.add('hidden', 'paged-out');
+      }
+    });
+
+    updateShowMoreButton();
+    refreshLightbox();
+  }
+
+  function revealMore() {
+    let revealed = 0;
+    items.forEach((item) => {
+      if (revealed >= PAGE_SIZE) return;
+      if (item.classList.contains('filtered-out')) return;
+      if (item.classList.contains('paged-out')) {
+        item.classList.remove('hidden', 'paged-out');
+        revealed++;
+      }
+    });
+    updateShowMoreButton();
+    refreshLightbox();
+  }
+
+  if (showMoreBtn) {
+    showMoreBtn.addEventListener('click', () => {
+      revealMore();
+    });
+  }
 
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
-      const filter = btn.dataset.filter!;
+      activeFilter = btn.dataset.filter!;
 
       filterBtns.forEach((b) => {
         b.classList.remove('bg-violet-600', 'border-violet-600', 'text-white', 'active');
@@ -157,19 +232,9 @@ const categories = ['All', ...new Set(photos.map((p) => p.category))];
       });
       btn.classList.add('bg-violet-600', 'border-violet-600', 'text-white', 'active');
       btn.classList.remove('border-zinc-700', 'text-zinc-400');
-
-      items.forEach((item) => {
-        const cat = item.dataset.category!;
-        if (filter === 'All' || cat === filter) {
-          item.classList.remove('hidden');
-        } else {
-          item.classList.add('hidden');
-        }
-      });
-
-      lightbox.destroy();
-      lightbox = initLightbox();
-      lightbox.init();
+      resetForFilter();
     });
   });
+
+  resetForFilter();
 </script>
