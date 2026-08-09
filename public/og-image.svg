@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#09090b"/>
+  <rect x="48" y="48" width="1104" height="534" rx="36" fill="#111827" stroke="#27272a"/>
+  <circle cx="1068" cy="108" r="56" fill="#7c3aed" fill-opacity="0.18"/>
+  <circle cx="132" cy="522" r="68" fill="#7c3aed" fill-opacity="0.12"/>
+  <path d="M130 162h52v234h-52z" fill="#7c3aed"/>
+  <path d="M130 162h208v52H130z" fill="#7c3aed"/>
+  <path d="M130 344h172v52H130z" fill="#a855f7"/>
+  <path d="M130 162h52v234h-52z" fill="#7c3aed"/>
+  <path d="M130 400h220v52H130z" fill="#7c3aed" fill-opacity="0.85"/>
+  <text x="390" y="272" fill="#f4f4f5" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="700">Ben Walker</text>
+  <text x="390" y="338" fill="#a1a1aa" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="500">Software engineer &amp; photographer</text>
+  <text x="390" y="404" fill="#d4d4d8" font-family="Inter, Arial, sans-serif" font-size="28">Projects, photography, and notes.</text>
+</svg>

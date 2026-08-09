@@ -5,8 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  // For GitHub Pages: set site to your GitHub Pages URL
-  // e.g. site: 'https://BenWalker01.github.io'
+  site: 'https://benwalker01.github.io',
   image: {
     service: sharpImageService(),
   },

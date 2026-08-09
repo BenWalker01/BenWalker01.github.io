@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+---
+
+<Layout title="Blog" description="Notes, writeups, and project updates from Ben Walker.">
+  <Nav />
+  <main class="flex-1 pt-32 pb-24 px-6 max-w-5xl mx-auto">
+    <div class="mb-12">
+      <p class="text-violet-400 text-sm font-mono mb-3 tracking-widest uppercase">Writing</p>
+      <h1 class="text-5xl font-bold text-white mb-4">Blog</h1>
+      <p class="text-zinc-400 text-lg max-w-xl">
+        Posts will appear here soon (tm).
+      </p>
+    </div>
+
+    <div class="rounded-3xl border border-dashed border-zinc-800 bg-zinc-900/30 p-10 md:p-16 text-zinc-400">
+      <p class="text-lg font-medium text-zinc-300 mb-2">Nothing published yet.</p>
+      <p>When I have something worth writing up, it'll show up here maybe.</p>
+    </div>
+  </main>
+
+  <footer class="border-t border-zinc-800/50 py-8 px-6 text-center text-zinc-600 text-sm">
+    <p>© {new Date().getFullYear()} Ben Walker · Built with <a href="https://astro.build" class="hover:text-violet-400 transition-colors">Astro</a></p>
+  </footer>
+</Layout>
