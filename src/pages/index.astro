@@ -2,6 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import { getImage } from 'astro:assets';
+
+// Grab up to 6 photos for the teaser grid
+const imageFiles = import.meta.glob<{ default: ImageMetadata }>(
+  '../assets/photos/**/*.{jpg,jpeg,png,webp}',
+  { eager: true }
+);
+const teaserPhotos = await Promise.all(
+  Object.values(imageFiles).slice(0, 6).map(mod =>
+    getImage({ src: mod.default, width: 300, height: 300, format: 'webp', quality: 75, fit: 'cover' })
+  )
+);
 
 const featuredProjects = [
   {
@@ -143,9 +155,16 @@ const featuredProjects = [
             </a>
           </div>
           <div class="grid grid-cols-3 gap-2 w-full md:w-64 shrink-0">
-            {[1, 2, 3, 4, 5, 6].map(i => (
-              <div class="aspect-square rounded-lg bg-zinc-800 border border-zinc-700/50 hover:border-violet-500/30 transition-colors"></div>
-            ))}
+            {teaserPhotos.length > 0
+              ? teaserPhotos.map(img => (
+                  <div class="aspect-square rounded-lg overflow-hidden border border-zinc-700/50">
+                    <img src={img.src} alt="" class="w-full h-full object-cover" loading="lazy" />
+                  </div>
+                ))
+              : [1,2,3,4,5,6].map(() => (
+                  <div class="aspect-square rounded-lg bg-zinc-800 border border-zinc-700/50"></div>
+                ))
+            }
           </div>
         </div>
       </div>
