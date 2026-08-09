@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
-import { getImage } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import photoDates from '../data/photo-dates.json';
 
 const imageFiles = import.meta.glob<{ default: ImageMetadata }>(
@@ -21,13 +21,10 @@ const photos = await Promise.all(
     const prefix = filename.split('-')[0];
     const category = prefix.charAt(0).toUpperCase() + prefix.slice(1);
 
-    const [thumb, display] = await Promise.all([
-      getImage({ src: image, width: 800, format: 'webp', quality: 80 }),
-      getImage({ src: image, width: 2000, format: 'webp', quality: 85 }),
-    ]);
+    const display = await getImage({ src: image, width: 2000, format: 'webp', quality: 85 });
 
     return {
-      thumb: thumb.src,
+      image,
       src: display.src,
       alt: filename.replace(/\.[^.]+$/, '').replace(/-/g, ' '),
       width: display.attributes.width ?? image.width,
@@ -88,11 +85,15 @@ const categories = ['All', ...new Set(photos.map((p) => p.category))];
                 class="gallery-item masonry-item group relative block overflow-hidden rounded-xl border border-zinc-700/50 hover:border-violet-500/40 transition-all duration-300"
               >
                 <div class="masonry-content relative overflow-hidden">
-                  <img
-                    src={photo.thumb}
+                  <Image
+                    src={photo.image}
+                    width={800}
+                    format="webp"
+                    quality={80}
                     alt={photo.alt}
                     class="block w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
+                    loading={index < 12 ? 'eager' : 'lazy'}
+                    fetchpriority={index < 12 ? 'high' : 'auto'}
                   />
                   <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
                     <svg class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
