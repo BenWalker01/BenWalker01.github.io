@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://benwalker01.github.io',
+  site: 'https://ben-walker.uk',
   image: {
     service: sharpImageService(),
   },
