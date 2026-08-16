@@ -1,0 +1,28 @@
+{
+  "namedEvents": {
+    "Farnborough Air Show": {
+      "displayName": "Farnborough Air Show 2026",
+      "description": "Static and flying displays at Farnborough International Airshow.",
+      "tags": ["Aviation", "FIA"]
+    },
+    "August 2026 Eclipse": {
+      "displayName": "August 2026 Eclipse",
+      "description": "Partial solar eclipse captured with 600mm and solar filter.",
+      "tags": ["Astrophotography"]
+    }
+  },
+  "gearEvents": [
+    {
+      "date": "2026-07-28",
+      "name": "Sigma 150-600mm f/5-6.3 Contemporary",
+      "description": "Big glass acquired - first dedicated wildlife telephoto.",
+      "icon": "lens"
+    },
+    {
+      "date": "2026-05-25",
+      "name": "Canon 400D & 75-300mm lens",
+      "description": "Fist camera and lens setup",
+      "icon": "lens"
+    }
+  ]
+}

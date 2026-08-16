@@ -6,9 +6,10 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "npm run generate:photo-dates && astro dev",
-    "generate:photo-dates": "node scripts/generate-photo-dates.mjs",
-    "build": "npm run generate:photo-dates && astro build",
+    "dev": "npm run generate:photo-catalog && astro dev",
+    "generate:photo-catalog": "node scripts/generate-photo-catalog.mjs",
+    "backfill:photo-metadata": "node scripts/backfill-photo-metadata.mjs",
+    "build": "npm run generate:photo-catalog && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

@@ -2,24 +2,67 @@
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import { Image, getImage } from 'astro:assets';
-import photoDates from '../data/photo-dates.json';
+import photoCatalog from '../data/photo-catalog.json';
+import timelineConfig from '../data/timeline-events.json';
 
 const imageFiles = import.meta.glob<{ default: ImageMetadata }>(
   '../assets/photos/**/*.{jpg,jpeg,png,webp}',
   { eager: true }
 );
 
-const dateMap = photoDates as Record<string, string>;
+interface PhotoCatalogEntry {
+  category: string;
+  date: string;
+  project: string;
+  location: string;
+  camera: string;
+  lens: string;
+  focalLength: string;
+  aperture: string;
+  shutter: string;
+  iso: string;
+}
+
+interface NamedEventConfig {
+  displayName: string;
+  description: string;
+  tags: string[];
+}
+
+interface GearEvent {
+  date: string;
+  name: string;
+  description: string;
+  icon: string;
+}
+
+const catalogMap = photoCatalog as Record<string, PhotoCatalogEntry>;
+const namedEvents = timelineConfig.namedEvents as Record<string, NamedEventConfig>;
+const gearEvents = timelineConfig.gearEvents as GearEvent[];
+
+function labelFromIso(iso: string) {
+  const ts = Date.parse(`${iso}T00:00:00Z`);
+  if (Number.isNaN(ts)) return 'Unknown date';
+  return new Date(ts).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+}
+
+function monthYearFromIso(iso: string) {
+  const ts = Date.parse(`${iso}T00:00:00Z`);
+  if (Number.isNaN(ts)) return '';
+  return new Date(ts).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+}
 
 const photos = await Promise.all(
   Object.entries(imageFiles).map(async ([filePath, mod]) => {
     const image = mod.default;
     const filename = filePath.split('/').pop()!;
-    const date = dateMap[filename] ?? '';
+    const fallbackPrefix = filename.split('-')[0];
+    const fallbackCategory = fallbackPrefix.charAt(0).toUpperCase() + fallbackPrefix.slice(1);
+    const catalog = catalogMap[filename];
+    const date = catalog?.date ?? '';
     const dateTs = Number.isNaN(Date.parse(`${date}T00:00:00Z`)) ? 0 : Date.parse(`${date}T00:00:00Z`);
-
-    const prefix = filename.split('-')[0];
-    const category = prefix.charAt(0).toUpperCase() + prefix.slice(1);
+    const dateLabel = dateTs ? new Date(dateTs).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : 'Unknown date';
+    const category = catalog?.category ?? fallbackCategory;
 
     const display = await getImage({ src: image, width: 2000, format: 'webp', quality: 85 });
 
@@ -27,105 +70,314 @@ const photos = await Promise.all(
       image,
       src: display.src,
       alt: filename.replace(/\.[^.]+$/, '').replace(/-/g, ' '),
+      filename,
       width: display.attributes.width ?? image.width,
       height: display.attributes.height ?? image.height,
       category,
       dateTs,
+      dateLabel,
+      date,
+      project: catalog?.project ?? 'Photo Collection',
+      location: catalog?.location ?? 'Unknown',
+      camera: catalog?.camera ?? 'Unknown',
+      lens: catalog?.lens ?? 'Unknown',
+      focalLength: catalog?.focalLength ?? 'Unknown',
+      aperture: catalog?.aperture ?? 'Unknown',
+      shutter: catalog?.shutter ?? 'Unknown',
+      iso: catalog?.iso ?? 'Unknown',
     };
   })
 );
 
-// Newest first
 photos.sort((a, b) => b.dateTs - a.dateTs || a.alt.localeCompare(b.alt));
 
-const categories = ['All', ...new Set(photos.map((p) => p.category))];
+const isNamedProject = (project: string) => Boolean(namedEvents[project]);
+const namedPhotos = photos.filter((photo) => isNamedProject(photo.project));
+const genericPhotos = photos.filter((photo) => !isNamedProject(photo.project));
+
+const namedProjectGroupMap = namedPhotos.reduce((acc, photo) => {
+  const key = photo.project;
+  if (!acc.has(key)) acc.set(key, []);
+  acc.get(key)!.push(photo);
+  return acc;
+}, new Map<string, typeof photos>());
+
+const genericDateGroupMap = genericPhotos.reduce((acc, photo) => {
+  const key = photo.date || 'unknown-date';
+  if (!acc.has(key)) acc.set(key, []);
+  acc.get(key)!.push(photo);
+  return acc;
+}, new Map<string, typeof photos>());
+
+interface PhotoGroup {
+  type: 'photo-group';
+  project: string;
+  date: string;
+  dateTs: number;
+  dateLabel: string;
+  monthYear: string;
+  location: string;
+  category: string;
+  photos: typeof photos;
+  named: NamedEventConfig | null;
+}
+
+interface GearEntry {
+  type: 'gear';
+  date: string;
+  dateTs: number;
+  dateLabel: string;
+  monthYear: string;
+  name: string;
+  description: string;
+  icon: string;
+}
+
+type TimelineEntry = PhotoGroup | GearEntry;
+
+const namedPhotoGroups: PhotoGroup[] = Array.from(namedProjectGroupMap.entries()).map(([project, groupPhotos]) => {
+  const sorted = [...groupPhotos].sort((a, b) => b.dateTs - a.dateTs);
+  const earliest = [...groupPhotos].sort((a, b) => a.dateTs - b.dateTs)[0];
+  const locations = [...new Set(groupPhotos.map((p) => p.location).filter((l) => l !== 'Unknown'))];
+  return {
+    type: 'photo-group' as const,
+    project,
+    date: earliest?.date ?? '',
+    dateTs: earliest?.dateTs ?? 0,
+    dateLabel: earliest?.dateTs ? labelFromIso(earliest.date) : 'Unknown date',
+    monthYear: earliest?.date ? monthYearFromIso(earliest.date) : '',
+    location: locations.length === 1 ? locations[0] : locations.length > 1 ? 'Multiple locations' : 'Unknown',
+    category: sorted[0]?.category ?? 'Unknown',
+    photos: sorted,
+    named: namedEvents[project] ?? null,
+  };
+});
+
+const genericPhotoGroups: PhotoGroup[] = Array.from(genericDateGroupMap.entries()).map(([dateKey, groupPhotos]) => {
+  const sorted = [...groupPhotos].sort((a, b) => b.dateTs - a.dateTs || a.alt.localeCompare(b.alt));
+  const first = sorted[0];
+  const locations = [...new Set(groupPhotos.map((p) => p.location).filter((l) => l !== 'Unknown'))];
+  const categories = [...new Set(groupPhotos.map((p) => p.category))];
+  const categoryLabel = categories.length <= 1 ? (categories[0] ?? 'Unknown') : `${categories[0]} +${categories.length - 1}`;
+
+  return {
+    type: 'photo-group' as const,
+    project: first?.project ?? 'Photo Collection',
+    date: dateKey,
+    dateTs: first?.dateTs ?? 0,
+    dateLabel: first?.dateTs ? labelFromIso(dateKey) : 'Unknown date',
+    monthYear: first?.dateTs ? monthYearFromIso(dateKey) : '',
+    location: locations.length === 1 ? locations[0] : locations.length > 1 ? 'Multiple locations' : 'Unknown',
+    category: categoryLabel,
+    photos: sorted,
+    named: null,
+  };
+});
+
+const gearEntries: GearEntry[] = gearEvents.map((g) => {
+  const dateTs = Date.parse(`${g.date}T00:00:00Z`);
+  return {
+    type: 'gear' as const,
+    date: g.date,
+    dateTs: Number.isNaN(dateTs) ? 0 : dateTs,
+    dateLabel: Number.isNaN(dateTs) ? 'Unknown date' : labelFromIso(g.date),
+    monthYear: Number.isNaN(dateTs) ? '' : monthYearFromIso(g.date),
+    name: g.name,
+    description: g.description,
+    icon: g.icon,
+  };
+});
+
+const timelineEntries: TimelineEntry[] = [...namedPhotoGroups, ...genericPhotoGroups, ...gearEntries].sort(
+  (a, b) => b.dateTs - a.dateTs
+);
+
+// Track month labels for year/month separators
+const seenMonths = new Set<string>();
 ---
+
 
 <Layout title="Photography" description="Photography portfolio by Ben Walker.">
   <Nav />
-  <main class="flex-1 pt-32 pb-24 px-6 max-w-6xl mx-auto">
-    <div class="mb-12">
+  <main class="flex-1 pt-32 pb-24 px-6 max-w-4xl mx-auto">
+    <div class="mb-16">
       <p class="text-violet-400 text-sm font-mono mb-3 tracking-widest uppercase">Portfolio</p>
       <h1 class="text-5xl font-bold text-white mb-4">Photography</h1>
-      <p class="text-zinc-400 text-lg max-w-xl">
-        Wildlife and aviation photography. Click any image to open it full screen.
+      <p class="text-zinc-400 text-lg max-w-2xl">
+        A timeline of shoots, events, and gear - everything from the catalogue.
       </p>
     </div>
 
     {photos.length === 0 ? (
       <div class="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-12 text-center">
-        <svg class="w-12 h-12 text-zinc-700 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-        </svg>
         <p class="text-zinc-500 mb-2">No photos yet</p>
-        <p class="text-zinc-600 text-sm">Add images to <code class="text-zinc-500 font-mono">src/assets/photos/</code> named like <code class="text-zinc-500 font-mono">wildlife-red-kite.jpg</code></p>
+        <p class="text-zinc-600 text-sm">Add images to <code class="text-zinc-500 font-mono">src/assets/photos/</code></p>
       </div>
     ) : (
-      <>
-        <div id="filters" class="flex flex-wrap gap-3 mb-10">
-          {categories.map((cat, i) => (
-            <button
-              data-filter={cat}
-              class={`filter-btn text-sm font-medium px-4 py-2 rounded-full border transition-all ${i === 0 ? 'bg-violet-600 border-violet-600 text-white active' : 'border-zinc-700 text-zinc-400 hover:border-violet-500/50 hover:text-zinc-200'}`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
+      <div id="gallery" class="relative">
+        {/* Vertical timeline spine */}
+        <div class="absolute left-[7px] top-0 bottom-0 w-px bg-zinc-800 pointer-events-none" aria-hidden="true"></div>
 
-        <div class="relative">
-          <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-0.5 auto-rows-[2px]">
-            {photos.map((photo, index) => (
-              <a
-                href={photo.src}
-                data-pswp-width={photo.width}
-                data-pswp-height={photo.height}
-                data-category={photo.category}
-                data-index={index}
-                class="gallery-item masonry-item group relative block overflow-hidden rounded-xl border border-zinc-700/50 hover:border-violet-500/40 transition-all duration-300"
-              >
-                <div class="masonry-content relative overflow-hidden">
-                  <Image
-                    src={photo.image}
-                    width={800}
-                    format="webp"
-                    quality={80}
-                    alt={photo.alt}
-                    class="block w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading={index < 12 ? 'eager' : 'lazy'}
-                    fetchpriority={index < 12 ? 'high' : 'auto'}
-                  />
-                  <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
-                    <svg class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
-                    </svg>
+        <div class="space-y-16">
+          {timelineEntries.map((entry) => {
+            const isNewMonth = !seenMonths.has(entry.monthYear);
+            if (entry.monthYear) seenMonths.add(entry.monthYear);
+
+            return (
+              <div>
+                {/* Month separator */}
+                {isNewMonth && entry.monthYear && (
+                  <div class="flex items-center gap-4 mb-8 -ml-0.5">
+                    <div class="w-3.5 h-3.5 rounded-full bg-zinc-700 border-2 border-zinc-950 flex-shrink-0 z-10"></div>
+                    <span class="text-xs font-mono tracking-widest uppercase text-zinc-500">{entry.monthYear}</span>
                   </div>
-                </div>
-                <div class="absolute top-3 left-3">
-                  <span class="text-xs font-medium bg-black/50 backdrop-blur-sm text-zinc-300 px-2 py-1 rounded-full">
-                    {photo.category}
-                  </span>
-                </div>
-              </a>
-            ))}
-          </div>
+                )}
 
-          <div
-            id="gallery-fade"
-            class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-zinc-950 transition-opacity duration-300"
-          ></div>
-        </div>
+                {entry.type === 'gear' ? (
+                  /* Gear milestone */
+                  <div class="flex gap-6 ml-7">
+                    <div class="flex-shrink-0 mt-1 w-8 h-8 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center">
+                      <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+                      </svg>
+                    </div>
+                    <div class="flex-1 border border-amber-500/20 bg-amber-500/5 rounded-2xl p-5">
+                      <p class="text-xs font-mono tracking-wider text-amber-400 uppercase mb-1">Gear · {entry.dateLabel}</p>
+                      <h3 class="text-white font-semibold text-lg mb-1">{entry.name}</h3>
+                      <p class="text-zinc-400 text-sm">{entry.description}</p>
+                    </div>
+                  </div>
+                ) : entry.named ? (
+                  /* Named event - prominent header + photo grid */
+                  <div class="ml-7 space-y-5">
+                    <div class="border border-violet-500/30 bg-violet-500/5 rounded-2xl overflow-hidden">
+                      {/* Cover strip */}
+                      {entry.photos.length > 0 && (
+                        <div class="grid grid-cols-4 h-40 overflow-hidden">
+                          {entry.photos.slice(0, 4).map((photo) => (
+                            <div class="overflow-hidden">
+                              <Image
+                                src={photo.image}
+                                width={400}
+                                format="webp"
+                                quality={70}
+                                alt={photo.alt}
+                                class="w-full h-full object-cover"
+                                loading="lazy"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      <div class="p-5">
+                        <div class="flex flex-wrap items-start justify-between gap-3 mb-2">
+                          <div>
+                            <p class="text-xs font-mono tracking-wider text-violet-400 uppercase mb-1">Event · {entry.dateLabel}</p>
+                            <h2 class="text-white font-bold text-2xl">{entry.named.displayName}</h2>
+                          </div>
+                          <div class="flex flex-wrap gap-2">
+                            {entry.named.tags.map((tag) => (
+                              <span class="text-xs border border-violet-500/40 text-violet-300 rounded-full px-2.5 py-1">{tag}</span>
+                            ))}
+                          </div>
+                        </div>
+                        <p class="text-zinc-400 text-sm mb-3">{entry.named.description}</p>
+                        <p class="text-xs text-zinc-500">{entry.location} · {entry.photos.length} photos</p>
+                      </div>
+                    </div>
 
-        <div class="mt-10 text-center">
-          <button
-            id="show-more-btn"
-            type="button"
-            class="inline-flex items-center gap-2 border border-zinc-700 hover:border-violet-500/50 text-zinc-300 hover:text-violet-300 font-medium px-6 py-3 rounded-xl transition-all"
-          >
-            Show more
-          </button>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
+                      {entry.photos.map((photo, idx) => (
+                        <a
+                          href={photo.src}
+                          data-pswp-width={photo.width}
+                          data-pswp-height={photo.height}
+                          data-category={photo.category}
+                          data-camera={photo.camera}
+                          data-lens={photo.lens}
+                          data-location={photo.location}
+                          data-date={photo.dateLabel}
+                          data-iso={photo.iso}
+                          data-shutter={photo.shutter}
+                          data-aperture={photo.aperture}
+                          data-focal-length={photo.focalLength}
+                          data-filename={photo.filename}
+                          class="gallery-item group relative block aspect-square overflow-hidden rounded-xl border border-zinc-800 hover:border-violet-500/40 transition-all duration-300"
+                        >
+                          <Image
+                            src={photo.image}
+                            width={600}
+                            format="webp"
+                            quality={80}
+                            alt={photo.alt}
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            loading={idx < 6 ? 'eager' : 'lazy'}
+                          />
+                          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                            </svg>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  /* Generic photo group - compact date row */
+                  <div class="ml-7 space-y-4">
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <span class="text-sm text-zinc-300 font-medium">{entry.dateLabel}</span>
+                        <span class="text-zinc-600 mx-2">·</span>
+                        <span class="text-sm text-zinc-500">{entry.category}</span>
+                        <span class="text-zinc-600 mx-2">·</span>
+                        <span class="text-xs text-zinc-600">{entry.photos.length} photos</span>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-1.5">
+                      {entry.photos.map((photo, idx) => (
+                        <a
+                          href={photo.src}
+                          data-pswp-width={photo.width}
+                          data-pswp-height={photo.height}
+                          data-category={photo.category}
+                          data-camera={photo.camera}
+                          data-lens={photo.lens}
+                          data-location={photo.location}
+                          data-date={photo.dateLabel}
+                          data-iso={photo.iso}
+                          data-shutter={photo.shutter}
+                          data-aperture={photo.aperture}
+                          data-focal-length={photo.focalLength}
+                          data-filename={photo.filename}
+                          class="gallery-item group relative block aspect-square overflow-hidden rounded-xl border border-zinc-800 hover:border-violet-500/40 transition-all duration-300"
+                        >
+                          <Image
+                            src={photo.image}
+                            width={500}
+                            format="webp"
+                            quality={80}
+                            alt={photo.alt}
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            loading={idx < 8 ? 'eager' : 'lazy'}
+                          />
+                          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                            </svg>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
-      </>
+      </div>
     )}
   </main>
 
@@ -135,12 +387,77 @@ const categories = ['All', ...new Set(photos.map((p) => p.category))];
 </Layout>
 
 <style>
-  .gallery-item.hidden {
-    display: none;
+  :global(.pswp__button--settings-toggle) {
+    width: auto;
+    color: #d4d4d8;
+    border: 1px solid #3f3f46;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 4px 10px;
+    margin: 12px;
+    background: rgba(9, 9, 11, 0.8);
   }
 
-  :root {
-    --pswp-bg: #09090b;
+  :global(.pswp__button--settings-toggle:hover) {
+    color: #ddd6fe;
+    border-color: rgba(139, 92, 246, 0.75);
+  }
+
+  :global(.pswp__custom-settings) {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: min(360px, calc(100vw - 32px));
+    border: 1px solid #3f3f46;
+    border-radius: 14px;
+    background: rgba(9, 9, 11, 0.92);
+    color: #e4e4e7;
+    backdrop-filter: blur(8px);
+    padding: 12px;
+    line-height: 1.4;
+  }
+
+  :global(.pswp__custom-settings[hidden]) {
+    display: none !important;
+  }
+
+  :global(.pswp__custom-settings h4) {
+    margin: 0 0 8px;
+    color: #c4b5fd;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  :global(.pswp__custom-settings ul) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  :global(.pswp__custom-settings li) {
+    background: rgba(39, 39, 42, 0.55);
+    border: 1px solid rgba(82, 82, 91, 0.8);
+    border-radius: 10px;
+    padding: 8px;
+  }
+
+  :global(.pswp__custom-settings strong) {
+    display: block;
+    color: #a1a1aa;
+    font-size: 11px;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  :global(.pswp__custom-settings span) {
+    font-size: 13px;
+    color: #f4f4f5;
   }
 </style>
 
@@ -149,141 +466,107 @@ const categories = ['All', ...new Set(photos.map((p) => p.category))];
   import PhotoSwipe from 'photoswipe';
   import 'photoswipe/style.css';
 
+  let settingsOpen = false;
+
+  function getSlideMeta(pswp) {
+    const el = pswp?.currSlide?.data?.element;
+    if (!el) return null;
+    return {
+      location: el.dataset.location || 'Unknown',
+      date: el.dataset.date || 'Unknown',
+      camera: el.dataset.camera || 'Unknown',
+      lens: el.dataset.lens || 'Unknown',
+      focalLength: el.dataset.focalLength || 'Unknown',
+      aperture: el.dataset.aperture || 'Unknown',
+      shutter: el.dataset.shutter || 'Unknown',
+      iso: el.dataset.iso || 'Unknown',
+    };
+  }
+
+  function renderSettings(pswp) {
+    const panel = pswp?.element?.querySelector('.pswp__custom-settings');
+    const toggleButton = pswp?.element?.querySelector('.pswp__button--settings-toggle');
+    if (!panel || !toggleButton) return;
+
+    toggleButton.setAttribute('aria-pressed', String(settingsOpen));
+    panel.hidden = !settingsOpen;
+
+    if (!settingsOpen) return;
+
+    const meta = getSlideMeta(pswp);
+    if (!meta) return;
+
+    const escapeHtml = (value) =>
+      String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+
+    panel.innerHTML = `
+      <h4>Photo settings</h4>
+      <ul>
+        <li><strong>Date</strong><span>${escapeHtml(meta.date)}</span></li>
+        <li><strong>Location</strong><span>${escapeHtml(meta.location)}</span></li>
+        <li><strong>Camera</strong><span>${escapeHtml(meta.camera)}</span></li>
+        <li><strong>Lens</strong><span>${escapeHtml(meta.lens)}</span></li>
+        <li><strong>Focal Length</strong><span>${escapeHtml(meta.focalLength)}</span></li>
+        <li><strong>Aperture</strong><span>${escapeHtml(meta.aperture)}</span></li>
+        <li><strong>Shutter</strong><span>${escapeHtml(meta.shutter)}</span></li>
+        <li><strong>ISO</strong><span>${escapeHtml(meta.iso)}</span></li>
+      </ul>
+    `;
+  }
+
   function initLightbox() {
-    return new PhotoSwipeLightbox({
+    const instance = new PhotoSwipeLightbox({
       gallery: '#gallery',
-      children: 'a.gallery-item:not(.hidden)',
+      children: 'a.gallery-item',
       pswpModule: PhotoSwipe,
       bgOpacity: 0.95,
       showHideAnimationType: 'zoom',
       padding: { top: 20, bottom: 20, left: 20, right: 20 },
     });
-  }
 
-  let lightbox = initLightbox();
-  lightbox.init();
-
-  const gallery = document.getElementById('gallery');
-  const galleryFade = document.getElementById('gallery-fade');
-  const filterBtns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
-  const items = document.querySelectorAll<HTMLElement>('.gallery-item');
-  const images = document.querySelectorAll<HTMLImageElement>('#gallery img');
-  const showMoreBtn = document.getElementById('show-more-btn') as HTMLButtonElement | null;
-  const PAGE_SIZE = 12;
-  let activeFilter = 'All';
-
-  function itemMatchesFilter(item: HTMLElement) {
-    const cat = item.dataset.category!;
-    return activeFilter === 'All' || cat === activeFilter;
-  }
-
-  function refreshLightbox() {
-    lightbox.destroy();
-    lightbox = initLightbox();
-    lightbox.init();
-  }
-
-  function layoutMasonry() {
-    if (!gallery) return;
-    const styles = getComputedStyle(gallery);
-    const rowHeight = parseFloat(styles.getPropertyValue('grid-auto-rows'));
-    const rowGap = parseFloat(styles.getPropertyValue('row-gap'));
-    if (!rowHeight || Number.isNaN(rowHeight)) return;
-
-    items.forEach((item) => {
-      if (item.classList.contains('hidden')) {
-        item.style.gridRowEnd = '';
-        return;
-      }
-      const content = item.querySelector<HTMLElement>('.masonry-content');
-      if (!content) return;
-      const height = content.getBoundingClientRect().height;
-      const span = Math.ceil((height + rowGap) / (rowHeight + rowGap));
-      item.style.gridRowEnd = `span ${Math.max(1, span)}`;
-    });
-  }
-
-  function relayoutMasonrySoon() {
-    requestAnimationFrame(layoutMasonry);
-  }
-
-  function updateShowMoreButton() {
-    if (!showMoreBtn) return;
-    const hasMore = Array.from(items).some(
-      (item) => itemMatchesFilter(item) && item.classList.contains('paged-out')
-    );
-    showMoreBtn.hidden = !hasMore;
-    if (galleryFade) {
-      galleryFade.classList.toggle('opacity-100', hasMore);
-      galleryFade.classList.toggle('opacity-0', !hasMore);
-      galleryFade.hidden = !hasMore;
-    }
-  }
-
-  function resetForFilter() {
-    let shown = 0;
-    items.forEach((item) => {
-      if (!itemMatchesFilter(item)) {
-        item.classList.add('hidden', 'filtered-out');
-        item.classList.remove('paged-out');
-        return;
-      }
-
-      item.classList.remove('filtered-out');
-      if (shown < PAGE_SIZE) {
-        item.classList.remove('hidden', 'paged-out');
-        shown++;
-      } else {
-        item.classList.add('hidden', 'paged-out');
-      }
-    });
-
-    updateShowMoreButton();
-    refreshLightbox();
-    relayoutMasonrySoon();
-  }
-
-  function revealMore() {
-    let revealed = 0;
-    items.forEach((item) => {
-      if (revealed >= PAGE_SIZE) return;
-      if (item.classList.contains('filtered-out')) return;
-      if (item.classList.contains('paged-out')) {
-        item.classList.remove('hidden', 'paged-out');
-        revealed++;
-      }
-    });
-    updateShowMoreButton();
-    refreshLightbox();
-    relayoutMasonrySoon();
-  }
-
-  if (showMoreBtn) {
-    showMoreBtn.addEventListener('click', () => {
-      revealMore();
-    });
-  }
-
-  filterBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      activeFilter = btn.dataset.filter!;
-
-      filterBtns.forEach((b) => {
-        b.classList.remove('bg-violet-600', 'border-violet-600', 'text-white', 'active');
-        b.classList.add('border-zinc-700', 'text-zinc-400');
+    instance.on('uiRegister', () => {
+      instance.pswp.ui.registerElement({
+        name: 'settings-toggle',
+        order: 8,
+        isButton: true,
+        tagName: 'button',
+        html: 'Settings',
+        className: 'pswp__button--settings-toggle',
+        onClick: (_event, _el, pswp) => {
+          settingsOpen = !settingsOpen;
+          renderSettings(pswp);
+        },
       });
-      btn.classList.add('bg-violet-600', 'border-violet-600', 'text-white', 'active');
-      btn.classList.remove('border-zinc-700', 'text-zinc-400');
-      resetForFilter();
+
+      instance.pswp.ui.registerElement({
+        name: 'settings-panel',
+        order: 9,
+        appendTo: 'root',
+        className: 'pswp__custom-settings',
+        html: '',
+        onInit: (el, pswp) => {
+          el.hidden = true;
+          renderSettings(pswp);
+        },
+      });
     });
-  });
 
-  images.forEach((img) => {
-    if (!img.complete) {
-      img.addEventListener('load', relayoutMasonrySoon);
-    }
-  });
+    instance.on('change', () => {
+      renderSettings(instance.pswp);
+    });
 
-  window.addEventListener('resize', relayoutMasonrySoon);
-  resetForFilter();
+    instance.on('close', () => {
+      settingsOpen = false;
+    });
+
+    return instance;
+  }
+
+  const lightbox = initLightbox();
+  lightbox.init();
 </script>

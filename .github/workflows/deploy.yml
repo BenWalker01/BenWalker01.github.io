@@ -23,6 +23,8 @@ jobs:
         with:
           node-version: 24
           cache: npm
+      - name: Install exiftool
+        run: sudo apt-get update && sudo apt-get install -y libimage-exiftool-perl
       - run: npm ci
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
