@@ -239,6 +239,18 @@
     "shutter": "1/400",
     "iso": "400"
   },
+  "landscape-lightPyramid.jpg": {
+    "category": "Landscape",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "157.0mm",
+    "aperture": "f/5",
+    "shutter": "1/2000",
+    "iso": "200"
+  },
   "landscape-onceInABlueMoon.jpg": {
     "category": "Landscape",
     "date": "2026-05-29",
@@ -383,6 +395,18 @@
     "shutter": "1/1600",
     "iso": "1600"
   },
+  "wildlife-duck-splishSplash.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1250",
+    "iso": "400"
+  },
   "wildlife-duck.jpg": {
     "category": "Wildlife",
     "date": "2026-06-06",
@@ -445,7 +469,7 @@
   },
   "wildlife-gull-fight.jpg": {
     "category": "Wildlife",
-    "date": "2026-06-06",
+    "date": "2026-05-17",
     "project": "Unknown",
     "location": "Unknown",
     "camera": "Canon EOS 400D DIGITAL",
@@ -454,6 +478,54 @@
     "aperture": "f/5.6",
     "shutter": "1/1600",
     "iso": "200"
+  },
+  "wildlife-gull-inFlight.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1000",
+    "iso": "400"
+  },
+  "wildlife-gull-inFlight2.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "wildlife-gull-inFlight3.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1000",
+    "iso": "400"
+  },
+  "wildlife-gull-inFlight4.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/2500",
+    "iso": "400"
   },
   "wildlife-gullInFlight.jpg": {
     "category": "Wildlife",
@@ -479,6 +551,30 @@
     "shutter": "1/3200",
     "iso": "1600"
   },
+  "wildlife-heronHunting.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1000",
+    "iso": "800"
+  },
+  "wildlife-kite-screech.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
   "wildlife-landedDragonfly.jpg": {
     "category": "Wildlife",
     "date": "2026-07-04",
@@ -491,9 +587,21 @@
     "shutter": "1/1600",
     "iso": "400"
   },
+  "wildlife-landingCormorant.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
   "wildlife-mallard.jpg": {
     "category": "Wildlife",
-    "date": "2026-06-06",
+    "date": "2026-05-17",
     "project": "Unknown",
     "location": "Unknown",
     "camera": "Canon EOS 400D DIGITAL",
@@ -562,6 +670,18 @@
     "aperture": "f/8",
     "shutter": "1/500",
     "iso": "200"
+  },
+  "wildlife-ruffled-tuffedDuck.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "400"
   },
   "wildlife-smolNom.jpg": {
     "category": "Wildlife",
