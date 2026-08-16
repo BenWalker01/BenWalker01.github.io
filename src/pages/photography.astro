@@ -453,20 +453,32 @@ const seenMonths = new Set<string>();
 <style>
   :global(.pswp__button--settings-toggle) {
     width: auto;
-    color: #d4d4d8;
-    border: 1px solid #3f3f46;
+    min-width: 148px;
+    min-height: 44px;
+    color: #ffffff;
+    border: 1px solid rgba(139, 92, 246, 0.9);
     border-radius: 999px;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 700;
     letter-spacing: 0.02em;
-    padding: 4px 10px;
-    margin: 12px;
-    background: rgba(9, 9, 11, 0.8);
+    padding: 10px 16px;
+    margin: 0;
+    background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+    box-shadow: 0 6px 18px rgba(124, 58, 237, 0.45);
+    position: absolute;
+    top: 14px;
+    right: 64px;
+    z-index: 30;
   }
 
   :global(.pswp__button--settings-toggle:hover) {
-    color: #ddd6fe;
-    border-color: rgba(139, 92, 246, 0.75);
+    color: #ffffff;
+    border-color: #c4b5fd;
+    filter: brightness(1.08);
+  }
+
+  :global(.pswp__button--zoom) {
+    display: none !important;
   }
 
   :global(.pswp__custom-settings) {
@@ -599,7 +611,7 @@ const seenMonths = new Set<string>();
         order: 8,
         isButton: true,
         tagName: 'button',
-        html: 'Settings',
+        html: 'Photo settings',
         className: 'pswp__button--settings-toggle',
         onClick: (_event, _el, pswp) => {
           settingsOpen = !settingsOpen;
