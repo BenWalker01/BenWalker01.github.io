@@ -214,11 +214,33 @@ const seenMonths = new Set<string>();
         <p class="text-zinc-600 text-sm">Add images to <code class="text-zinc-500 font-mono">src/assets/photos/</code></p>
       </div>
     ) : (
-      <div id="gallery" class="relative">
-        {/* Vertical timeline spine */}
-        <div class="absolute left-[7px] top-0 bottom-0 w-px bg-zinc-800 pointer-events-none" aria-hidden="true"></div>
+      <>
+        <div class="mb-8">
+          <p class="text-xs uppercase tracking-wide text-zinc-500 mb-2">View</p>
+          <div class="inline-flex rounded-xl border border-zinc-700 p-1 bg-zinc-900/40">
+            <button
+              id="timeline-view-btn"
+              type="button"
+              class="view-toggle-btn active rounded-lg px-4 py-2 text-sm font-medium bg-violet-600 text-white transition-colors"
+            >
+              Timeline
+            </button>
+            <button
+              id="gallery-view-btn"
+              type="button"
+              class="view-toggle-btn rounded-lg px-4 py-2 text-sm font-medium text-zinc-300 hover:text-white transition-colors"
+            >
+              Gallery
+            </button>
+          </div>
+        </div>
 
-        <div class="space-y-16">
+        <div id="gallery" class="relative">
+          <section id="timeline-view" class="view-pane relative">
+            {/* Vertical timeline spine */}
+            <div class="absolute left-[7px] top-0 bottom-0 w-px bg-zinc-800 pointer-events-none" aria-hidden="true"></div>
+
+            <div class="space-y-16">
           {timelineEntries.map((entry) => {
             const isNewMonth = !seenMonths.has(entry.monthYear);
             if (entry.monthYear) seenMonths.add(entry.monthYear);
@@ -376,8 +398,50 @@ const seenMonths = new Set<string>();
               </div>
             );
           })}
-        </div>
+          </div>
+        </section>
+
+        <section id="classic-gallery-view" class="view-pane hidden">
+          <div id="classic-gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-3 auto-rows-[6px]">
+            {photos.map((photo, idx) => (
+              <a
+                href={photo.src}
+                data-pswp-width={photo.width}
+                data-pswp-height={photo.height}
+                data-category={photo.category}
+                data-camera={photo.camera}
+                data-lens={photo.lens}
+                data-location={photo.location}
+                data-date={photo.dateLabel}
+                data-iso={photo.iso}
+                data-shutter={photo.shutter}
+                data-aperture={photo.aperture}
+                data-focal-length={photo.focalLength}
+                data-filename={photo.filename}
+                class="gallery-item masonry-item group relative block overflow-hidden rounded-xl border border-zinc-800 hover:border-violet-500/40 transition-all duration-300"
+              >
+                <div class="masonry-content relative overflow-hidden">
+                  <Image
+                    src={photo.image}
+                    width={900}
+                    format="webp"
+                    quality={80}
+                    alt={photo.alt}
+                    class="block w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading={idx < 12 ? 'eager' : 'lazy'}
+                  />
+                  <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
       </div>
+      </>
     )}
   </main>
 
@@ -522,7 +586,7 @@ const seenMonths = new Set<string>();
   function initLightbox() {
     const instance = new PhotoSwipeLightbox({
       gallery: '#gallery',
-      children: 'a.gallery-item',
+      children: '.view-pane:not(.hidden) a.gallery-item',
       pswpModule: PhotoSwipe,
       bgOpacity: 0.95,
       showHideAnimationType: 'zoom',
@@ -566,6 +630,69 @@ const seenMonths = new Set<string>();
 
     return instance;
   }
+
+  const timelineViewBtn = document.getElementById('timeline-view-btn');
+  const galleryViewBtn = document.getElementById('gallery-view-btn');
+  const timelineView = document.getElementById('timeline-view');
+  const classicGalleryView = document.getElementById('classic-gallery-view');
+  const classicGalleryGrid = document.getElementById('classic-gallery-grid');
+
+  function layoutClassicMasonry() {
+    if (!classicGalleryView || !classicGalleryGrid || classicGalleryView.classList.contains('hidden')) return;
+
+    const styles = getComputedStyle(classicGalleryGrid);
+    const rowHeight = parseFloat(styles.getPropertyValue('grid-auto-rows'));
+    const rowGap = parseFloat(styles.getPropertyValue('row-gap'));
+    if (!rowHeight || Number.isNaN(rowHeight)) return;
+
+    const items = classicGalleryGrid.querySelectorAll('.masonry-item');
+    items.forEach((item) => {
+      const content = item.querySelector('.masonry-content');
+      if (!content) return;
+      const height = content.getBoundingClientRect().height;
+      const span = Math.ceil((height + rowGap) / (rowHeight + rowGap));
+      item.style.gridRowEnd = `span ${span}`;
+    });
+  }
+
+  function setView(mode) {
+    if (!timelineViewBtn || !galleryViewBtn || !timelineView || !classicGalleryView) return;
+    const showTimeline = mode === 'timeline';
+
+    timelineView.classList.toggle('hidden', !showTimeline);
+    classicGalleryView.classList.toggle('hidden', showTimeline);
+
+    timelineViewBtn.classList.toggle('bg-violet-600', showTimeline);
+    timelineViewBtn.classList.toggle('text-white', showTimeline);
+    timelineViewBtn.classList.toggle('active', showTimeline);
+    timelineViewBtn.classList.toggle('text-zinc-300', !showTimeline);
+
+    galleryViewBtn.classList.toggle('bg-violet-600', !showTimeline);
+    galleryViewBtn.classList.toggle('text-white', !showTimeline);
+    galleryViewBtn.classList.toggle('active', !showTimeline);
+    galleryViewBtn.classList.toggle('text-zinc-300', showTimeline);
+
+    if (!showTimeline) {
+      requestAnimationFrame(layoutClassicMasonry);
+    }
+  }
+
+  timelineViewBtn?.addEventListener('click', () => setView('timeline'));
+  galleryViewBtn?.addEventListener('click', () => setView('gallery'));
+
+  document.querySelectorAll('#classic-gallery-view img').forEach((img) => {
+    if (!img.complete) {
+      img.addEventListener('load', () => {
+        requestAnimationFrame(layoutClassicMasonry);
+      });
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    requestAnimationFrame(layoutClassicMasonry);
+  });
+
+  setView('timeline');
 
   const lightbox = initLightbox();
   lightbox.init();
