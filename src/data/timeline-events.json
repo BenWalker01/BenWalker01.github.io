@@ -9,6 +9,11 @@
       "displayName": "August 2026 Eclipse",
       "description": "Partial solar eclipse captured with 600mm and solar filter.",
       "tags": ["Astrophotography"]
+    },
+    "The British Ironworks": {
+      "displayName": "The British Ironworks",
+      "description": "Statues made of scrap and recycled objects.",
+      "tags": ["Statue"]
     }
   },
   "gearEvents": [
