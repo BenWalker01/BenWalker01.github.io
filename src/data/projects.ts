@@ -13,7 +13,7 @@ export const projects: Project[] = [
     description: 'Display (and replay) euroscope log files',
     tags: ['typescript', 'react'],
     github: 'https://github.com/BenWalker01/vatsim-replay-map',
-    live: 'https://benwalker01.github.io/vatsim-replay-map/',
+    live: 'https://ben-walker.uk/vatsim-replay-map/',
     featured: true,
   },
   {
@@ -35,6 +35,7 @@ export const projects: Project[] = [
     description: 'Track arrival and departure rates over a given time',
     tags: ['Python'],
     github: 'https://github.com/BenWalker01/vatsim-airport-rates',
+    live: "https://ben-walker.uk/vatsim-airport-rates",
   },
   {
     title: 'vSMR',
