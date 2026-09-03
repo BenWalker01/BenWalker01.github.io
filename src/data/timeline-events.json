@@ -18,9 +18,15 @@
   },
   "gearEvents": [
     {
+      "date": "2026-09-02",
+      "name": "Canon R7",
+      "description": "Upgrade to mirrorless camera",
+      "icon": "lens"
+    },
+    {
       "date": "2026-07-28",
       "name": "Sigma 150-600mm f/5-6.3 Contemporary",
-      "description": "Big glass acquired - first dedicated wildlife telephoto.",
+      "description": "First dedicated wildlife telephoto.",
       "icon": "lens"
     },
     {
