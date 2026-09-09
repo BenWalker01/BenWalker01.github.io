@@ -47,6 +47,66 @@
     "shutter": "1/30",
     "iso": "1600"
   },
+  "aviation-747Arrival.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/3200",
+    "iso": "800"
+  },
+  "aviation-747nose.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "150mm",
+    "aperture": "f/8",
+    "shutter": "1/3200",
+    "iso": "1600"
+  },
+  "aviation-747overfly.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/7.1",
+    "shutter": "1/2000",
+    "iso": "500"
+  },
+  "aviation-747SunsetTouchdown.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "421mm",
+    "aperture": "f/8",
+    "shutter": "1/3200",
+    "iso": "800"
+  },
+  "aviation-777nose.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2500",
+    "iso": "1000"
+  },
   "aviation-airCanada787.jpg": {
     "category": "Aviation",
     "date": "2026-07-05",
@@ -119,6 +179,18 @@
     "shutter": "1/1600",
     "iso": "400"
   },
+  "aviation-bizjetEMA.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "302mm",
+    "aperture": "f/8",
+    "shutter": "1/3200",
+    "iso": "800"
+  },
   "aviation-BreakLeft.jpg": {
     "category": "Aviation",
     "date": "2026-07-24",
@@ -130,6 +202,18 @@
     "aperture": "f/8",
     "shutter": "1/1250",
     "iso": "200"
+  },
+  "aviation-dhlArrival.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/3200",
+    "iso": "1000"
   },
   "aviation-heavy350Nose.jpg": {
     "category": "Aviation",
@@ -154,6 +238,42 @@
     "aperture": "f/9",
     "shutter": "1/1000",
     "iso": "200"
+  },
+  "aviation-maxRotation.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "3200"
+  },
+  "aviation-tuiArrival.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/7.1",
+    "shutter": "1/2000",
+    "iso": "400"
+  },
+  "aviation-tuiNose.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "302mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "2500"
   },
   "aviation-uae-smokeon.jpg": {
     "category": "Aviation",
@@ -226,6 +346,42 @@
     "aperture": "f/8",
     "shutter": "1/1250",
     "iso": "200"
+  },
+  "aviation-voyagerArrival.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "232mm",
+    "aperture": "f/6.3",
+    "shutter": "1/2000",
+    "iso": "1250"
+  },
+  "aviation-voyagerNose.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "232mm",
+    "aperture": "f/6.3",
+    "shutter": "1/2000",
+    "iso": "2500"
+  },
+  "aviation-voyagerTouchdown.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/6.3",
+    "shutter": "1/2000",
+    "iso": "1250"
   },
   "landscape-branch.jpg": {
     "category": "Landscape",
