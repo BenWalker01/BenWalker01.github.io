@@ -14,6 +14,11 @@
       "displayName": "The British Ironworks Centre",
       "description": "Statues made of scrap and recycled objects.",
       "tags": ["Statue"]
+    },
+    "RAF Fairford" : {
+      "displayName": "RAF Fairford",
+      "description": "Trip to see the Bones at Fairford",
+      "tags": ["Aviation", "B1", "USAF"]
     }
   },
   "gearEvents": [

@@ -47,6 +47,18 @@
     "shutter": "1/30",
     "iso": "1600"
   },
+  "aviation-4purpleCans.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "640"
+  },
   "aviation-747Arrival.jpg": {
     "category": "Aviation",
     "date": "2026-09-05",
@@ -105,6 +117,18 @@
     "focalLength": "600mm",
     "aperture": "f/8",
     "shutter": "1/2500",
+    "iso": "1000"
+  },
+  "aviation-afterburnerTakeoff.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
     "iso": "1000"
   },
   "aviation-airCanada787.jpg": {
@@ -191,6 +215,78 @@
     "shutter": "1/3200",
     "iso": "800"
   },
+  "aviation-boneBank.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "500"
+  },
+  "aviation-boneEngines.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "531mm",
+    "aperture": "f/7.1",
+    "shutter": "1/1600",
+    "iso": "3200"
+  },
+  "aviation-boneHeadOn.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "232mm",
+    "aperture": "f/7.1",
+    "shutter": "1/1600",
+    "iso": "2000"
+  },
+  "aviation-boneNose.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "388mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "1000"
+  },
+  "aviation-boneSunsetBank.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "500"
+  },
+  "aviation-boneSunsetBank2.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
   "aviation-BreakLeft.jpg": {
     "category": "Aviation",
     "date": "2026-07-24",
@@ -250,6 +346,30 @@
     "aperture": "f/8",
     "shutter": "1/2000",
     "iso": "3200"
+  },
+  "aviation-smokeyBone.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "800"
+  },
+  "aviation-theOtherOneTouchDown.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "275mm",
+    "aperture": "f/8",
+    "shutter": "1/4000",
+    "iso": "1000"
   },
   "aviation-tuiArrival.jpg": {
     "category": "Aviation",
@@ -347,6 +467,18 @@
     "shutter": "1/1250",
     "iso": "200"
   },
+  "aviation-vbadMotionBlur.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "275mm",
+    "aperture": "f/9",
+    "shutter": "1/60",
+    "iso": "100"
+  },
   "aviation-voyagerArrival.jpg": {
     "category": "Aviation",
     "date": "2026-09-05",
@@ -382,6 +514,18 @@
     "aperture": "f/6.3",
     "shutter": "1/2000",
     "iso": "1250"
+  },
+  "aviation-waVortex.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "150mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "320"
   },
   "landscape-branch.jpg": {
     "category": "Landscape",
