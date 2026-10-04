@@ -47,6 +47,18 @@
     "shutter": "1/30",
     "iso": "1600"
   },
+  "astro-TheMoon.jpg": {
+    "category": "Astro",
+    "date": "2026-10-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "800"
+  },
   "aviation-4purpleCans.jpg": {
     "category": "Aviation",
     "date": "2026-09-07",
@@ -551,6 +563,18 @@
     "shutter": "1/2000",
     "iso": "200"
   },
+  "landscape-longPath.jpg": {
+    "category": "Landscape",
+    "date": "2026-10-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "157mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "2500"
+  },
   "landscape-onceInABlueMoon.jpg": {
     "category": "Landscape",
     "date": "2026-05-29",
@@ -658,6 +682,30 @@
     "aperture": "f/5",
     "shutter": "1/400",
     "iso": "100"
+  },
+  "wildlife-2-sheep.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "640"
+  },
+  "wildlife-baaBaaBlackSheep.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "1600"
   },
   "wildlife-babyGoose.jpg": {
     "category": "Wildlife",
@@ -1234,5 +1282,17 @@
     "aperture": "f/6.3",
     "shutter": "1/1600",
     "iso": "100"
+  },
+  "wildlife-theSheepsGoodSide.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "640"
   }
 }
