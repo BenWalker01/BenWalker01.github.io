@@ -730,9 +730,34 @@ const seenMonths = new Set<string>();
     }
   }
 
-  timelineViewBtn?.addEventListener('click', () => setView('timeline'));
-  galleryViewBtn?.addEventListener('click', () => setView('gallery'));
-  galleryCategoryFilter?.addEventListener('change', filterClassicGallery);
+  // Deep links: #timeline, #gallery, #gallery/<type>
+  function updateHash() {
+    const showGallery = !classicGalleryView.classList.contains('hidden');
+    const type = galleryCategoryFilter?.value ?? 'all';
+    const hash = !showGallery ? '#timeline' : type === 'all' ? '#gallery' : `#gallery/${encodeURIComponent(type)}`;
+    history.replaceState(null, '', hash);
+  }
+
+  function applyHash() {
+    const [view, rawType] = decodeURIComponent(location.hash.slice(1)).split('/');
+    if (view === 'gallery') {
+      if (galleryCategoryFilter) {
+        const match = [...galleryCategoryFilter.options].find(
+          (o) => o.value.toLowerCase() === (rawType ?? 'all').toLowerCase(),
+        );
+        galleryCategoryFilter.value = match ? match.value : 'all';
+        filterClassicGallery();
+      }
+      setView('gallery');
+    } else {
+      setView('timeline');
+    }
+  }
+
+  timelineViewBtn?.addEventListener('click', () => { setView('timeline'); updateHash(); });
+  galleryViewBtn?.addEventListener('click', () => { setView('gallery'); updateHash(); });
+  galleryCategoryFilter?.addEventListener('change', () => { filterClassicGallery(); updateHash(); });
+  window.addEventListener('hashchange', applyHash);
 
   document.querySelectorAll('#classic-gallery-view img').forEach((img) => {
     if (!img.complete) {
@@ -746,7 +771,7 @@ const seenMonths = new Set<string>();
     requestAnimationFrame(layoutClassicMasonry);
   });
 
-  setView('timeline');
+  applyHash();
 
   const lightbox = initLightbox();
   lightbox.init();
