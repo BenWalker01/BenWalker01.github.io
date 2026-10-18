@@ -33,6 +33,22 @@ function toCategory(filename) {
   return prefix ? `${prefix.charAt(0).toUpperCase()}${prefix.slice(1)}` : 'Unknown';
 }
 
+function toPhotoKey(filename) {
+  return filename.split(path.sep).join('/');
+}
+
+function findPhotos(directory, parent = '') {
+  return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const relativePath = path.join(parent, entry.name);
+    const fullPath = path.join(directory, entry.name);
+
+    if (entry.isDirectory()) return findPhotos(fullPath, relativePath);
+    return entry.isFile() && IMAGE_EXTENSIONS.has(path.extname(entry.name).toLowerCase())
+      ? [relativePath]
+      : [];
+  });
+}
+
 function parseExifDate(value) {
   if (!value || typeof value !== 'string') return null;
   const match = value.trim().match(/^(\d{4}):(\d{2}):(\d{2}) /);
@@ -100,28 +116,32 @@ function main() {
     return;
   }
 
-  const photos = readdirSync(PHOTOS_DIR)
-    .filter((name) => IMAGE_EXTENSIONS.has(path.extname(name).toLowerCase()))
-    .sort((a, b) => a.localeCompare(b));
+  const photos = findPhotos(PHOTOS_DIR).sort((a, b) => a.localeCompare(b));
 
   const fullPaths = photos.map((name) => path.join(PHOTOS_DIR, name));
   const exifRows = runExiftool(fullPaths);
   const existing = readCatalog();
-  const byFilename = new Map(exifRows.map((row) => [String(row.FileName || ''), row]));
+  const byPhotoKey = new Map(
+    exifRows.map((row) => [
+      toPhotoKey(path.relative(PHOTOS_DIR, String(row.SourceFile || ''))),
+      row,
+    ])
+  );
 
   const next = {};
-  for (const filename of photos) {
-    const row = byFilename.get(filename) ?? {};
-    const prev = existing[filename] ?? {};
+  for (const photoKey of photos) {
+    const filename = path.basename(photoKey);
+    const row = byPhotoKey.get(toPhotoKey(photoKey)) ?? {};
+    const prev = existing[toPhotoKey(photoKey)] ?? existing[filename] ?? {};
 
     const date =
       parseExifDate(row.SubSecDateTimeOriginal) ??
       parseExifDate(row.DateTimeOriginal) ??
       parseExifDate(row.CreateDate) ??
       (typeof prev.date === 'string' ? prev.date : null) ??
-      fallbackDate(filename);
+      fallbackDate(photoKey);
 
-    next[filename] = {
+    next[toPhotoKey(photoKey)] = {
       category: toText(prev.category ?? toCategory(filename)),
       date: toText(date),
       project: toText(prev.project ?? 'Photo Collection'),

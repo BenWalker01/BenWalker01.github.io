@@ -1,5 +1,5 @@
 {
-  "astro-clipse-2.jpg": {
+  "astro/2026-08-12-august-2026-eclipse/astro-clipse-2.jpg": {
     "category": "Astro",
     "date": "2026-08-12",
     "project": "August 2026 Eclipse",
@@ -11,7 +11,7 @@
     "shutter": "1/1000",
     "iso": "200"
   },
-  "astro-eclipse-1.jpg": {
+  "astro/2026-08-12-august-2026-eclipse/astro-eclipse-1.jpg": {
     "category": "Astro",
     "date": "2026-08-12",
     "project": "August 2026 Eclipse",
@@ -23,7 +23,7 @@
     "shutter": "1/2000",
     "iso": "200"
   },
-  "astro-eclipse-3.jpg": {
+  "astro/2026-08-12-august-2026-eclipse/astro-eclipse-3.jpg": {
     "category": "Astro",
     "date": "2026-08-12",
     "project": "August 2026 Eclipse",
@@ -35,7 +35,7 @@
     "shutter": "1/1000",
     "iso": "200"
   },
-  "astro-sunandcloud.jpg": {
+  "astro/2026-08-12-august-2026-eclipse/astro-sunandcloud.jpg": {
     "category": "Astro",
     "date": "2026-08-12",
     "project": "August 2026 Eclipse",
@@ -47,7 +47,7 @@
     "shutter": "1/30",
     "iso": "1600"
   },
-  "astro-TheMoon.jpg": {
+  "astro/2026-10-03/astro-TheMoon.jpg": {
     "category": "Astro",
     "date": "2026-10-03",
     "project": "Photo Collection",
@@ -59,91 +59,7 @@
     "shutter": "1/1600",
     "iso": "800"
   },
-  "aviation-4purpleCans.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-07",
-    "project": "RAF Fairford",
-    "location": "RAF Fairford",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/2000",
-    "iso": "640"
-  },
-  "aviation-747Arrival.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/3200",
-    "iso": "800"
-  },
-  "aviation-747nose.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "150mm",
-    "aperture": "f/8",
-    "shutter": "1/3200",
-    "iso": "1600"
-  },
-  "aviation-747overfly.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/7.1",
-    "shutter": "1/2000",
-    "iso": "500"
-  },
-  "aviation-747SunsetTouchdown.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "421mm",
-    "aperture": "f/8",
-    "shutter": "1/3200",
-    "iso": "800"
-  },
-  "aviation-777nose.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/2500",
-    "iso": "1000"
-  },
-  "aviation-afterburnerTakeoff.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-07",
-    "project": "RAF Fairford",
-    "location": "RAF Fairford",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/2000",
-    "iso": "1000"
-  },
-  "aviation-airCanada787.jpg": {
+  "aviation/2026-07-05/aviation-airCanada787.jpg": {
     "category": "Aviation",
     "date": "2026-07-05",
     "project": "Unknown",
@@ -155,7 +71,7 @@
     "shutter": "1/2500",
     "iso": "200"
   },
-  "aviation-BA320.jpg": {
+  "aviation/2026-07-05/aviation-BA320.jpg": {
     "category": "Aviation",
     "date": "2026-07-05",
     "project": "Unknown",
@@ -167,7 +83,7 @@
     "shutter": "1/2000",
     "iso": "400"
   },
-  "aviation-baneo.jpg": {
+  "aviation/2026-07-05/aviation-baneo.jpg": {
     "category": "Aviation",
     "date": "2026-07-05",
     "project": "Unknown",
@@ -179,7 +95,7 @@
     "shutter": "1/1600",
     "iso": "200"
   },
-  "aviation-bat7eng.jpg": {
+  "aviation/2026-07-05/aviation-bat7eng.jpg": {
     "category": "Aviation",
     "date": "2026-07-05",
     "project": "Unknown",
@@ -191,7 +107,7 @@
     "shutter": "1/2500",
     "iso": "200"
   },
-  "aviation-big-emirates.jpg": {
+  "aviation/2026-07-05/aviation-big-emirates.jpg": {
     "category": "Aviation",
     "date": "2026-07-05",
     "project": "Unknown",
@@ -203,7 +119,7 @@
     "shutter": "1/1600",
     "iso": "200"
   },
-  "aviation-big-etihad.jpg": {
+  "aviation/2026-07-05/aviation-big-etihad.jpg": {
     "category": "Aviation",
     "date": "2026-07-05",
     "project": "Unknown",
@@ -215,115 +131,7 @@
     "shutter": "1/1600",
     "iso": "400"
   },
-  "aviation-bizjetEMA.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "302mm",
-    "aperture": "f/8",
-    "shutter": "1/3200",
-    "iso": "800"
-  },
-  "aviation-boneBank.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-07",
-    "project": "RAF Fairford",
-    "location": "RAF Fairford",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "500"
-  },
-  "aviation-boneEngines.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-07",
-    "project": "RAF Fairford",
-    "location": "RAF Fairford",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "531mm",
-    "aperture": "f/7.1",
-    "shutter": "1/1600",
-    "iso": "3200"
-  },
-  "aviation-boneHeadOn.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-07",
-    "project": "RAF Fairford",
-    "location": "RAF Fairford",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "232mm",
-    "aperture": "f/7.1",
-    "shutter": "1/1600",
-    "iso": "2000"
-  },
-  "aviation-boneNose.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-07",
-    "project": "RAF Fairford",
-    "location": "RAF Fairford",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "388mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "1000"
-  },
-  "aviation-boneSunsetBank.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-07",
-    "project": "RAF Fairford",
-    "location": "RAF Fairford",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "500"
-  },
-  "aviation-boneSunsetBank2.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-07",
-    "project": "RAF Fairford",
-    "location": "RAF Fairford",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "aviation-BreakLeft.jpg": {
-    "category": "Aviation",
-    "date": "2026-07-24",
-    "project": "Farnborough Air Show",
-    "location": "Farnborough",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/8",
-    "shutter": "1/1250",
-    "iso": "200"
-  },
-  "aviation-dhlArrival.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/3200",
-    "iso": "1000"
-  },
-  "aviation-heavy350Nose.jpg": {
+  "aviation/2026-07-05/aviation-heavy350Nose.jpg": {
     "category": "Aviation",
     "date": "2026-07-05",
     "project": "Unknown",
@@ -335,7 +143,19 @@
     "shutter": "1/1250",
     "iso": "200"
   },
-  "aviation-LargeAirbuses.jpg": {
+  "aviation/2026-07-24-farnborough-air-show/aviation-BreakLeft.jpg": {
+    "category": "Aviation",
+    "date": "2026-07-24",
+    "project": "Farnborough Air Show",
+    "location": "Farnborough",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/8",
+    "shutter": "1/1250",
+    "iso": "200"
+  },
+  "aviation/2026-07-24-farnborough-air-show/aviation-LargeAirbuses.jpg": {
     "category": "Aviation",
     "date": "2026-07-24",
     "project": "Farnborough Air Show",
@@ -347,67 +167,7 @@
     "shutter": "1/1000",
     "iso": "200"
   },
-  "aviation-maxRotation.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/2000",
-    "iso": "3200"
-  },
-  "aviation-smokeyBone.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-07",
-    "project": "RAF Fairford",
-    "location": "RAF Fairford",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "800"
-  },
-  "aviation-theOtherOneTouchDown.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-07",
-    "project": "RAF Fairford",
-    "location": "RAF Fairford",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "275mm",
-    "aperture": "f/8",
-    "shutter": "1/4000",
-    "iso": "1000"
-  },
-  "aviation-tuiArrival.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/7.1",
-    "shutter": "1/2000",
-    "iso": "400"
-  },
-  "aviation-tuiNose.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "302mm",
-    "aperture": "f/8",
-    "shutter": "1/2000",
-    "iso": "2500"
-  },
-  "aviation-uae-smokeon.jpg": {
+  "aviation/2026-07-24-farnborough-air-show/aviation-uae-smokeon.jpg": {
     "category": "Aviation",
     "date": "2026-07-24",
     "project": "Farnborough Air Show",
@@ -419,7 +179,7 @@
     "shutter": "1/1250",
     "iso": "200"
   },
-  "aviation-uae-smokeroll.jpg": {
+  "aviation/2026-07-24-farnborough-air-show/aviation-uae-smokeroll.jpg": {
     "category": "Aviation",
     "date": "2026-07-24",
     "project": "Farnborough Air Show",
@@ -431,7 +191,7 @@
     "shutter": "1/1250",
     "iso": "200"
   },
-  "aviation-uae-smokeroll2.jpg": {
+  "aviation/2026-07-24-farnborough-air-show/aviation-uae-smokeroll2.jpg": {
     "category": "Aviation",
     "date": "2026-07-24",
     "project": "Farnborough Air Show",
@@ -443,7 +203,7 @@
     "shutter": "1/1250",
     "iso": "200"
   },
-  "aviation-UAEForm.jpg": {
+  "aviation/2026-07-24-farnborough-air-show/aviation-UAEForm.jpg": {
     "category": "Aviation",
     "date": "2026-07-24",
     "project": "Farnborough Air Show",
@@ -455,7 +215,7 @@
     "shutter": "1/1250",
     "iso": "200"
   },
-  "aviation-uaeManyJetsGoUp.jpg": {
+  "aviation/2026-07-24-farnborough-air-show/aviation-uaeManyJetsGoUp.jpg": {
     "category": "Aviation",
     "date": "2026-07-24",
     "project": "Farnborough Air Show",
@@ -467,7 +227,7 @@
     "shutter": "1/1250",
     "iso": "200"
   },
-  "aviation-uaesignleton.jpg": {
+  "aviation/2026-07-24-farnborough-air-show/aviation-uaesignleton.jpg": {
     "category": "Aviation",
     "date": "2026-07-24",
     "project": "Farnborough Air Show",
@@ -479,7 +239,283 @@
     "shutter": "1/1250",
     "iso": "200"
   },
-  "aviation-vbadMotionBlur.jpg": {
+  "aviation/2026-09-05/aviation-747Arrival.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/3200",
+    "iso": "800"
+  },
+  "aviation/2026-09-05/aviation-747nose.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "150mm",
+    "aperture": "f/8",
+    "shutter": "1/3200",
+    "iso": "1600"
+  },
+  "aviation/2026-09-05/aviation-747overfly.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/7.1",
+    "shutter": "1/2000",
+    "iso": "500"
+  },
+  "aviation/2026-09-05/aviation-747SunsetTouchdown.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "421mm",
+    "aperture": "f/8",
+    "shutter": "1/3200",
+    "iso": "800"
+  },
+  "aviation/2026-09-05/aviation-777nose.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2500",
+    "iso": "1000"
+  },
+  "aviation/2026-09-05/aviation-bizjetEMA.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "302mm",
+    "aperture": "f/8",
+    "shutter": "1/3200",
+    "iso": "800"
+  },
+  "aviation/2026-09-05/aviation-dhlArrival.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/3200",
+    "iso": "1000"
+  },
+  "aviation/2026-09-05/aviation-maxRotation.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "3200"
+  },
+  "aviation/2026-09-05/aviation-tuiArrival.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/7.1",
+    "shutter": "1/2000",
+    "iso": "400"
+  },
+  "aviation/2026-09-05/aviation-tuiNose.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "302mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "2500"
+  },
+  "aviation/2026-09-05/aviation-voyagerArrival.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "232mm",
+    "aperture": "f/6.3",
+    "shutter": "1/2000",
+    "iso": "1250"
+  },
+  "aviation/2026-09-05/aviation-voyagerNose.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "232mm",
+    "aperture": "f/6.3",
+    "shutter": "1/2000",
+    "iso": "2500"
+  },
+  "aviation/2026-09-05/aviation-voyagerTouchdown.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-05",
+    "project": "Photo Collection",
+    "location": "East Midlands",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/6.3",
+    "shutter": "1/2000",
+    "iso": "1250"
+  },
+  "aviation/2026-09-07-raf-fairford/aviation-4purpleCans.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "640"
+  },
+  "aviation/2026-09-07-raf-fairford/aviation-afterburnerTakeoff.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "1000"
+  },
+  "aviation/2026-09-07-raf-fairford/aviation-boneBank.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "500"
+  },
+  "aviation/2026-09-07-raf-fairford/aviation-boneEngines.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "531mm",
+    "aperture": "f/7.1",
+    "shutter": "1/1600",
+    "iso": "3200"
+  },
+  "aviation/2026-09-07-raf-fairford/aviation-boneHeadOn.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "232mm",
+    "aperture": "f/7.1",
+    "shutter": "1/1600",
+    "iso": "2000"
+  },
+  "aviation/2026-09-07-raf-fairford/aviation-boneNose.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "388mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "1000"
+  },
+  "aviation/2026-09-07-raf-fairford/aviation-boneSunsetBank.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "500"
+  },
+  "aviation/2026-09-07-raf-fairford/aviation-boneSunsetBank2.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "aviation/2026-09-07-raf-fairford/aviation-smokeyBone.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "800"
+  },
+  "aviation/2026-09-07-raf-fairford/aviation-theOtherOneTouchDown.jpg": {
+    "category": "Aviation",
+    "date": "2026-09-07",
+    "project": "RAF Fairford",
+    "location": "RAF Fairford",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "275mm",
+    "aperture": "f/8",
+    "shutter": "1/4000",
+    "iso": "1000"
+  },
+  "aviation/2026-09-07-raf-fairford/aviation-vbadMotionBlur.jpg": {
     "category": "Aviation",
     "date": "2026-09-07",
     "project": "RAF Fairford",
@@ -491,43 +527,7 @@
     "shutter": "1/60",
     "iso": "100"
   },
-  "aviation-voyagerArrival.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "232mm",
-    "aperture": "f/6.3",
-    "shutter": "1/2000",
-    "iso": "1250"
-  },
-  "aviation-voyagerNose.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "232mm",
-    "aperture": "f/6.3",
-    "shutter": "1/2000",
-    "iso": "2500"
-  },
-  "aviation-voyagerTouchdown.jpg": {
-    "category": "Aviation",
-    "date": "2026-09-05",
-    "project": "Photo Collection",
-    "location": "East Midlands",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/6.3",
-    "shutter": "1/2000",
-    "iso": "1250"
-  },
-  "aviation-waVortex.jpg": {
+  "aviation/2026-09-07-raf-fairford/aviation-waVortex.jpg": {
     "category": "Aviation",
     "date": "2026-09-07",
     "project": "RAF Fairford",
@@ -539,7 +539,7 @@
     "shutter": "1/1600",
     "iso": "320"
   },
-  "landscape-branch.jpg": {
+  "landscape/2026-05-29/landscape-branch.jpg": {
     "category": "Landscape",
     "date": "2026-05-29",
     "project": "Unknown",
@@ -551,31 +551,7 @@
     "shutter": "1/400",
     "iso": "400"
   },
-  "landscape-lightPyramid.jpg": {
-    "category": "Landscape",
-    "date": "2026-08-16",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Unknown",
-    "focalLength": "157.0mm",
-    "aperture": "f/5",
-    "shutter": "1/2000",
-    "iso": "200"
-  },
-  "landscape-longPath.jpg": {
-    "category": "Landscape",
-    "date": "2026-10-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "157mm",
-    "aperture": "f/8",
-    "shutter": "1/2000",
-    "iso": "2500"
-  },
-  "landscape-onceInABlueMoon.jpg": {
+  "landscape/2026-05-29/landscape-onceInABlueMoon.jpg": {
     "category": "Landscape",
     "date": "2026-05-29",
     "project": "Unknown",
@@ -587,31 +563,7 @@
     "shutter": "1/500",
     "iso": "400"
   },
-  "landscape-Temple.jpg": {
-    "category": "Landscape",
-    "date": "2026-06-06",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/8",
-    "shutter": "1/4000",
-    "iso": "1600"
-  },
-  "landscape-Trees.jpg": {
-    "category": "Landscape",
-    "date": "2026-06-06",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/5.6",
-    "shutter": "1/2000",
-    "iso": "1600"
-  },
-  "landscape-wheat.jpg": {
+  "landscape/2026-05-29/landscape-wheat.jpg": {
     "category": "Landscape",
     "date": "2026-05-29",
     "project": "Unknown",
@@ -623,7 +575,55 @@
     "shutter": "1/1000",
     "iso": "1600"
   },
-  "statue-centaur.jpg": {
+  "landscape/2026-06-06/landscape-Temple.jpg": {
+    "category": "Landscape",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/8",
+    "shutter": "1/4000",
+    "iso": "1600"
+  },
+  "landscape/2026-06-06/landscape-Trees.jpg": {
+    "category": "Landscape",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/5.6",
+    "shutter": "1/2000",
+    "iso": "1600"
+  },
+  "landscape/2026-08-16/landscape-lightPyramid.jpg": {
+    "category": "Landscape",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Unknown",
+    "focalLength": "157.0mm",
+    "aperture": "f/5",
+    "shutter": "1/2000",
+    "iso": "200"
+  },
+  "landscape/2026-10-03/landscape-longPath.jpg": {
+    "category": "Landscape",
+    "date": "2026-10-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "157mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "2500"
+  },
+  "statue/2026-08-25-the-british-ironworks-centre/statue-centaur.jpg": {
     "category": "Statue",
     "date": "2026-08-25",
     "project": "The British Ironworks Centre",
@@ -635,7 +635,7 @@
     "shutter": "1/800",
     "iso": "100"
   },
-  "statue-chainedMonkey.jpg": {
+  "statue/2026-08-25-the-british-ironworks-centre/statue-chainedMonkey.jpg": {
     "category": "Statue",
     "date": "2026-08-25",
     "project": "The British Ironworks Centre",
@@ -647,7 +647,7 @@
     "shutter": "1/320",
     "iso": "100"
   },
-  "statue-kinfeAngel.jpg": {
+  "statue/2026-08-25-the-british-ironworks-centre/statue-kinfeAngel.jpg": {
     "category": "Statue",
     "date": "2026-08-25",
     "project": "The British Ironworks Centre",
@@ -659,7 +659,7 @@
     "shutter": "1/400",
     "iso": "100"
   },
-  "statue-reaperStatue.jpg": {
+  "statue/2026-08-25-the-british-ironworks-centre/statue-reaperStatue.jpg": {
     "category": "Statue",
     "date": "2026-08-25",
     "project": "The British Ironworks Centre",
@@ -671,7 +671,7 @@
     "shutter": "1/800",
     "iso": "100"
   },
-  "statue-redBiPlane.jpg": {
+  "statue/2026-08-25-the-british-ironworks-centre/statue-redBiPlane.jpg": {
     "category": "Statue",
     "date": "2026-08-25",
     "project": "The British Ironworks Centre",
@@ -683,343 +683,31 @@
     "shutter": "1/400",
     "iso": "100"
   },
-  "wildlife-2-sheep.jpg": {
+  "wildlife/2026-05-17/wildlife-gull-fight.jpg": {
     "category": "Wildlife",
-    "date": "2026-10-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/2000",
-    "iso": "640"
-  },
-  "wildlife-baaBaaBlackSheep.jpg": {
-    "category": "Wildlife",
-    "date": "2026-10-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/2000",
-    "iso": "1600"
-  },
-  "wildlife-babyGoose.jpg": {
-    "category": "Wildlife",
-    "date": "2026-06-06",
+    "date": "2026-05-17",
     "project": "Unknown",
     "location": "Unknown",
     "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
+    "lens": "EF28-80mm f/3.5-5.6",
+    "focalLength": "80.0mm",
     "aperture": "f/5.6",
-    "shutter": "1/2000",
-    "iso": "1600"
+    "shutter": "1/1600",
+    "iso": "200"
   },
-  "wildlife-birdOnBranch.jpg": {
+  "wildlife/2026-05-17/wildlife-mallard.jpg": {
     "category": "Wildlife",
-    "date": "2026-06-06",
+    "date": "2026-05-17",
     "project": "Unknown",
     "location": "Unknown",
     "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
+    "lens": "EF28-80mm f/3.5-5.6",
+    "focalLength": "80.0mm",
     "aperture": "f/5.6",
-    "shutter": "1/2000",
-    "iso": "1600"
-  },
-  "wildlife-bluetit.jpg": {
-    "category": "Wildlife",
-    "date": "2026-06-06",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/5.6",
-    "shutter": "1/3200",
-    "iso": "1600"
-  },
-  "wildlife-bunnyBigLeap.jpg": {
-    "category": "Wildlife",
-    "date": "2026-10-18",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "EF70-200mm f/4L USM",
-    "focalLength": "188mm",
-    "aperture": "f/4",
-    "shutter": "1/1000",
-    "iso": "640"
-  },
-  "wildlife-bunnyChase.jpg": {
-    "category": "Wildlife",
-    "date": "2026-10-18",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "EF70-200mm f/4L USM",
-    "focalLength": "184mm",
-    "aperture": "f/4",
-    "shutter": "1/1000",
-    "iso": "800"
-  },
-  "wildlife-bunnyJump.jpg": {
-    "category": "Wildlife",
-    "date": "2026-10-18",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "EF70-200mm f/4L USM",
-    "focalLength": "188mm",
-    "aperture": "f/4",
-    "shutter": "1/1000",
-    "iso": "640"
-  },
-  "wildlife-bunnyLeap.jpg": {
-    "category": "Wildlife",
-    "date": "2026-10-18",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "EF70-200mm f/4L USM",
-    "focalLength": "188mm",
-    "aperture": "f/4",
-    "shutter": "1/1000",
-    "iso": "640"
-  },
-  "wildlife-bunnySit.jpg": {
-    "category": "Wildlife",
-    "date": "2026-10-18",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "EF70-200mm f/4L USM",
-    "focalLength": "188mm",
-    "aperture": "f/4",
-    "shutter": "1/1000",
-    "iso": "640"
-  },
-  "wildlife-ChillHeron.jpg": {
-    "category": "Wildlife",
-    "date": "2026-06-06",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/5.6",
-    "shutter": "1/4000",
-    "iso": "1600"
-  },
-  "wildlife-compactquack.jpg": {
-    "category": "Wildlife",
-    "date": "2026-06-06",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "290.0mm",
-    "aperture": "f/5.6",
-    "shutter": "1/1250",
-    "iso": "1600"
-  },
-  "wildlife-crow.jpg": {
-    "category": "Wildlife",
-    "date": "2026-06-18",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/8",
-    "shutter": "1/3200",
-    "iso": "1600"
-  },
-  "wildlife-crowOnDeer.jpg": {
-    "category": "Wildlife",
-    "date": "2026-09-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/7.1",
     "shutter": "1/1600",
-    "iso": "320"
+    "iso": "200"
   },
-  "wildlife-deerEat.jpg": {
-    "category": "Wildlife",
-    "date": "2026-09-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/7.1",
-    "shutter": "1/1600",
-    "iso": "500"
-  },
-  "wildlife-deerEat2.jpg": {
-    "category": "Wildlife",
-    "date": "2026-09-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/7.1",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "wildlife-deerEat3.jpg": {
-    "category": "Wildlife",
-    "date": "2026-09-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/7.1",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "wildlife-deerEat4.jpg": {
-    "category": "Wildlife",
-    "date": "2026-09-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/7.1",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "wildlife-deerEat5.jpg": {
-    "category": "Wildlife",
-    "date": "2026-09-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/7.1",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "wildlife-deerEat6.jpg": {
-    "category": "Wildlife",
-    "date": "2026-09-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/7.1",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "wildlife-deerFull.jpg": {
-    "category": "Wildlife",
-    "date": "2026-09-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/6.3",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "wildlife-deerHeadshot.jpg": {
-    "category": "Wildlife",
-    "date": "2026-09-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/6.3",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "wildlife-deerlook.jpg": {
-    "category": "Wildlife",
-    "date": "2026-09-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "1250"
-  },
-  "wildlife-deerPose.jpg": {
-    "category": "Wildlife",
-    "date": "2026-09-03",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS R7",
-    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
-    "focalLength": "600mm",
-    "aperture": "f/6.3",
-    "shutter": "1/1600",
-    "iso": "1250"
-  },
-  "wildlife-dragonFly.jpg": {
-    "category": "Wildlife",
-    "date": "2026-06-18",
-    "project": "Summer Macro Studies",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/5.6",
-    "shutter": "1/4000",
-    "iso": "800"
-  },
-  "wildlife-drippySwan.jpg": {
-    "category": "Wildlife",
-    "date": "2026-06-06",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "1600"
-  },
-  "wildlife-duck-splishSplash.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-16",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Unknown",
-    "focalLength": "600.0mm",
-    "aperture": "f/6.3",
-    "shutter": "1/1250",
-    "iso": "400"
-  },
-  "wildlife-duck.jpg": {
-    "category": "Wildlife",
-    "date": "2026-06-06",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/5.6",
-    "shutter": "1/1250",
-    "iso": "1600"
-  },
-  "wildlife-duckFloat.jpg": {
+  "wildlife/2026-05-29/wildlife-duckFloat.jpg": {
     "category": "Wildlife",
     "date": "2026-05-29",
     "project": "Unknown",
@@ -1031,7 +719,7 @@
     "shutter": "1/640",
     "iso": "1600"
   },
-  "wildlife-duckSwimmingSunset.jpg": {
+  "wildlife/2026-05-29/wildlife-duckSwimmingSunset.jpg": {
     "category": "Wildlife",
     "date": "2026-05-29",
     "project": "Unknown",
@@ -1043,175 +731,7 @@
     "shutter": "1/1600",
     "iso": "1600"
   },
-  "wildlife-evilPigeon.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-12",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
-    "focalLength": "600.0mm",
-    "aperture": "f/6.3",
-    "shutter": "1/2000",
-    "iso": "100"
-  },
-  "wildlife-grassDuck.jpg": {
-    "category": "Wildlife",
-    "date": "2026-06-06",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/5.6",
-    "shutter": "1/1600",
-    "iso": "1600"
-  },
-  "wildlife-gull-fight.jpg": {
-    "category": "Wildlife",
-    "date": "2026-05-17",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "EF28-80mm f/3.5-5.6",
-    "focalLength": "80.0mm",
-    "aperture": "f/5.6",
-    "shutter": "1/1600",
-    "iso": "200"
-  },
-  "wildlife-gull-inFlight.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-16",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Unknown",
-    "focalLength": "600.0mm",
-    "aperture": "f/6.3",
-    "shutter": "1/1000",
-    "iso": "400"
-  },
-  "wildlife-gull-inFlight2.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-16",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Unknown",
-    "focalLength": "600.0mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "wildlife-gull-inFlight3.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-16",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Unknown",
-    "focalLength": "600.0mm",
-    "aperture": "f/6.3",
-    "shutter": "1/1000",
-    "iso": "400"
-  },
-  "wildlife-gull-inFlight4.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-16",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Unknown",
-    "focalLength": "600.0mm",
-    "aperture": "f/6.3",
-    "shutter": "1/2500",
-    "iso": "400"
-  },
-  "wildlife-gullInFlight.jpg": {
-    "category": "Wildlife",
-    "date": "2026-07-04",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/5.6",
-    "shutter": "1/2000",
-    "iso": "400"
-  },
-  "wildlife-Heron.jpg": {
-    "category": "Wildlife",
-    "date": "2026-06-06",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/5.6",
-    "shutter": "1/3200",
-    "iso": "1600"
-  },
-  "wildlife-heronHunting.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-16",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Unknown",
-    "focalLength": "600.0mm",
-    "aperture": "f/6.3",
-    "shutter": "1/1000",
-    "iso": "800"
-  },
-  "wildlife-kite-screech.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-16",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Unknown",
-    "focalLength": "600.0mm",
-    "aperture": "f/6.3",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "wildlife-landedDragonfly.jpg": {
-    "category": "Wildlife",
-    "date": "2026-07-04",
-    "project": "Summer Macro Studies",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "wildlife-landingCormorant.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-16",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Unknown",
-    "focalLength": "600.0mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "wildlife-mallard.jpg": {
-    "category": "Wildlife",
-    "date": "2026-05-17",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "EF28-80mm f/3.5-5.6",
-    "focalLength": "80.0mm",
-    "aperture": "f/5.6",
-    "shutter": "1/1600",
-    "iso": "200"
-  },
-  "wildlife-midnightswan.jpg": {
+  "wildlife/2026-05-29/wildlife-midnightswan.jpg": {
     "category": "Wildlife",
     "date": "2026-05-29",
     "project": "Unknown",
@@ -1223,91 +743,7 @@
     "shutter": "1/200",
     "iso": "1600"
   },
-  "wildlife-NomGoose.jpg": {
-    "category": "Wildlife",
-    "date": "2026-06-06",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "1600"
-  },
-  "wildlife-perchCrow.jpg": {
-    "category": "Wildlife",
-    "date": "2026-07-04",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/7.1",
-    "shutter": "1/800",
-    "iso": "800"
-  },
-  "wildlife-pigeonBlur.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-12",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
-    "focalLength": "600.0mm",
-    "aperture": "f/6.3",
-    "shutter": "1/2000",
-    "iso": "100"
-  },
-  "wildlife-pigeonHigh.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-12",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
-    "focalLength": "600.0mm",
-    "aperture": "f/8",
-    "shutter": "1/500",
-    "iso": "200"
-  },
-  "wildlife-ruffled-tuffedDuck.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-16",
-    "project": "Photo Collection",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Unknown",
-    "focalLength": "600.0mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "400"
-  },
-  "wildlife-smolNom.jpg": {
-    "category": "Wildlife",
-    "date": "2026-06-06",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Canon EF75-300mm f/4-5.6",
-    "focalLength": "300.0mm",
-    "aperture": "f/5.6",
-    "shutter": "1/2500",
-    "iso": "1600"
-  },
-  "wildlife-Swan.jpg": {
-    "category": "Wildlife",
-    "date": "2026-08-01",
-    "project": "Unknown",
-    "location": "Unknown",
-    "camera": "Canon EOS 400D DIGITAL",
-    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
-    "focalLength": "600.0mm",
-    "aperture": "f/8",
-    "shutter": "1/1600",
-    "iso": "200"
-  },
-  "wildlife-SwanGrey.jpg": {
+  "wildlife/2026-05-29/wildlife-SwanGrey.jpg": {
     "category": "Wildlife",
     "date": "2026-05-29",
     "project": "Unknown",
@@ -1319,7 +755,7 @@
     "shutter": "1/80",
     "iso": "1600"
   },
-  "wildlife-swanLook.jpg": {
+  "wildlife/2026-05-29/wildlife-swanLook.jpg": {
     "category": "Wildlife",
     "date": "2026-05-29",
     "project": "Unknown",
@@ -1331,7 +767,211 @@
     "shutter": "1/200",
     "iso": "1600"
   },
-  "wildlife-tallSwan.jpg": {
+  "wildlife/2026-06-06/wildlife-babyGoose.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/5.6",
+    "shutter": "1/2000",
+    "iso": "1600"
+  },
+  "wildlife/2026-06-06/wildlife-birdOnBranch.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/5.6",
+    "shutter": "1/2000",
+    "iso": "1600"
+  },
+  "wildlife/2026-06-06/wildlife-bluetit.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/5.6",
+    "shutter": "1/3200",
+    "iso": "1600"
+  },
+  "wildlife/2026-06-06/wildlife-ChillHeron.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/5.6",
+    "shutter": "1/4000",
+    "iso": "1600"
+  },
+  "wildlife/2026-06-06/wildlife-compactquack.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "290.0mm",
+    "aperture": "f/5.6",
+    "shutter": "1/1250",
+    "iso": "1600"
+  },
+  "wildlife/2026-06-06/wildlife-drippySwan.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "1600"
+  },
+  "wildlife/2026-06-06/wildlife-duck.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/5.6",
+    "shutter": "1/1250",
+    "iso": "1600"
+  },
+  "wildlife/2026-06-06/wildlife-grassDuck.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/5.6",
+    "shutter": "1/1600",
+    "iso": "1600"
+  },
+  "wildlife/2026-06-06/wildlife-Heron.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/5.6",
+    "shutter": "1/3200",
+    "iso": "1600"
+  },
+  "wildlife/2026-06-06/wildlife-NomGoose.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "1600"
+  },
+  "wildlife/2026-06-06/wildlife-smolNom.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-06",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/5.6",
+    "shutter": "1/2500",
+    "iso": "1600"
+  },
+  "wildlife/2026-06-18/wildlife-crow.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-18",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/8",
+    "shutter": "1/3200",
+    "iso": "1600"
+  },
+  "wildlife/2026-06-18/wildlife-dragonFly.jpg": {
+    "category": "Wildlife",
+    "date": "2026-06-18",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Unknown",
+    "lens": "Unknown",
+    "focalLength": "Unknown",
+    "aperture": "Unknown",
+    "shutter": "Unknown",
+    "iso": "Unknown"
+  },
+  "wildlife/2026-07-04/wildlife-gullInFlight.jpg": {
+    "category": "Wildlife",
+    "date": "2026-07-04",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/5.6",
+    "shutter": "1/2000",
+    "iso": "400"
+  },
+  "wildlife/2026-07-04/wildlife-landedDragonfly.jpg": {
+    "category": "Wildlife",
+    "date": "2026-07-04",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Unknown",
+    "lens": "Unknown",
+    "focalLength": "Unknown",
+    "aperture": "Unknown",
+    "shutter": "Unknown",
+    "iso": "Unknown"
+  },
+  "wildlife/2026-07-04/wildlife-perchCrow.jpg": {
+    "category": "Wildlife",
+    "date": "2026-07-04",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Canon EF75-300mm f/4-5.6",
+    "focalLength": "300.0mm",
+    "aperture": "f/7.1",
+    "shutter": "1/800",
+    "iso": "800"
+  },
+  "wildlife/2026-08-01/wildlife-Swan.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-01",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "200"
+  },
+  "wildlife/2026-08-01/wildlife-tallSwan.jpg": {
     "category": "Wildlife",
     "date": "2026-08-01",
     "project": "Unknown",
@@ -1343,7 +983,283 @@
     "shutter": "1/1600",
     "iso": "100"
   },
-  "wildlife-theSheepsGoodSide.jpg": {
+  "wildlife/2026-08-12/wildlife-evilPigeon.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-12",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/2000",
+    "iso": "100"
+  },
+  "wildlife/2026-08-12/wildlife-pigeonBlur.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-12",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/2000",
+    "iso": "100"
+  },
+  "wildlife/2026-08-12/wildlife-pigeonHigh.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-12",
+    "project": "Unknown",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary",
+    "focalLength": "600.0mm",
+    "aperture": "f/8",
+    "shutter": "1/500",
+    "iso": "200"
+  },
+  "wildlife/2026-08-16/wildlife-duck-splishSplash.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Unknown",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1250",
+    "iso": "400"
+  },
+  "wildlife/2026-08-16/wildlife-gull-inFlight.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Unknown",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1000",
+    "iso": "400"
+  },
+  "wildlife/2026-08-16/wildlife-gull-inFlight2.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Unknown",
+    "focalLength": "600.0mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "wildlife/2026-08-16/wildlife-gull-inFlight3.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Unknown",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1000",
+    "iso": "400"
+  },
+  "wildlife/2026-08-16/wildlife-gull-inFlight4.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Unknown",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/2500",
+    "iso": "400"
+  },
+  "wildlife/2026-08-16/wildlife-heronHunting.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Unknown",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1000",
+    "iso": "800"
+  },
+  "wildlife/2026-08-16/wildlife-kite-screech.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Unknown",
+    "focalLength": "600.0mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "wildlife/2026-08-16/wildlife-landingCormorant.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Unknown",
+    "focalLength": "600.0mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "wildlife/2026-08-16/wildlife-ruffled-tuffedDuck.jpg": {
+    "category": "Wildlife",
+    "date": "2026-08-16",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS 400D DIGITAL",
+    "lens": "Unknown",
+    "focalLength": "600.0mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "wildlife/2026-09-03/wildlife-crowOnDeer.jpg": {
+    "category": "Wildlife",
+    "date": "2026-09-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/7.1",
+    "shutter": "1/1600",
+    "iso": "320"
+  },
+  "wildlife/2026-09-03/wildlife-deerEat.jpg": {
+    "category": "Wildlife",
+    "date": "2026-09-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/7.1",
+    "shutter": "1/1600",
+    "iso": "500"
+  },
+  "wildlife/2026-09-03/wildlife-deerEat2.jpg": {
+    "category": "Wildlife",
+    "date": "2026-09-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/7.1",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "wildlife/2026-09-03/wildlife-deerEat3.jpg": {
+    "category": "Wildlife",
+    "date": "2026-09-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/7.1",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "wildlife/2026-09-03/wildlife-deerEat4.jpg": {
+    "category": "Wildlife",
+    "date": "2026-09-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/7.1",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "wildlife/2026-09-03/wildlife-deerEat5.jpg": {
+    "category": "Wildlife",
+    "date": "2026-09-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/7.1",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "wildlife/2026-09-03/wildlife-deerEat6.jpg": {
+    "category": "Wildlife",
+    "date": "2026-09-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/7.1",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "wildlife/2026-09-03/wildlife-deerFull.jpg": {
+    "category": "Wildlife",
+    "date": "2026-09-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "wildlife/2026-09-03/wildlife-deerHeadshot.jpg": {
+    "category": "Wildlife",
+    "date": "2026-09-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1600",
+    "iso": "400"
+  },
+  "wildlife/2026-09-03/wildlife-deerlook.jpg": {
+    "category": "Wildlife",
+    "date": "2026-09-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/1600",
+    "iso": "1250"
+  },
+  "wildlife/2026-09-03/wildlife-deerPose.jpg": {
+    "category": "Wildlife",
+    "date": "2026-09-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/6.3",
+    "shutter": "1/1600",
+    "iso": "1250"
+  },
+  "wildlife/2026-10-03/wildlife-2-sheep.jpg": {
     "category": "Wildlife",
     "date": "2026-10-03",
     "project": "Photo Collection",
@@ -1353,6 +1269,90 @@
     "focalLength": "600mm",
     "aperture": "f/8",
     "shutter": "1/2000",
+    "iso": "640"
+  },
+  "wildlife/2026-10-03/wildlife-baaBaaBlackSheep.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "1600"
+  },
+  "wildlife/2026-10-03/wildlife-theSheepsGoodSide.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-03",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "150-600mm F5-6.3 DG OS HSM | Contemporary 015",
+    "focalLength": "600mm",
+    "aperture": "f/8",
+    "shutter": "1/2000",
+    "iso": "640"
+  },
+  "wildlife/2026-10-18/wildlife-bunnyBigLeap.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-18",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "188mm",
+    "aperture": "f/4",
+    "shutter": "1/1000",
+    "iso": "640"
+  },
+  "wildlife/2026-10-18/wildlife-bunnyChase.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-18",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "184mm",
+    "aperture": "f/4",
+    "shutter": "1/1000",
+    "iso": "800"
+  },
+  "wildlife/2026-10-18/wildlife-bunnyJump.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-18",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "188mm",
+    "aperture": "f/4",
+    "shutter": "1/1000",
+    "iso": "640"
+  },
+  "wildlife/2026-10-18/wildlife-bunnyLeap.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-18",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "188mm",
+    "aperture": "f/4",
+    "shutter": "1/1000",
+    "iso": "640"
+  },
+  "wildlife/2026-10-18/wildlife-bunnySit.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-18",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "188mm",
+    "aperture": "f/4",
+    "shutter": "1/1000",
     "iso": "640"
   }
 }
