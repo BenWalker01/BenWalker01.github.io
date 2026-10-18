@@ -91,6 +91,7 @@ const photos = await Promise.all(
 );
 
 photos.sort((a, b) => b.dateTs - a.dateTs || a.alt.localeCompare(b.alt));
+const photoCategories = [...new Set(photos.map((photo) => photo.category))].sort((a, b) => a.localeCompare(b));
 
 const isNamedProject = (project: string) => Boolean(namedEvents[project]);
 const namedPhotos = photos.filter((photo) => isNamedProject(photo.project));
@@ -409,6 +410,17 @@ const seenMonths = new Set<string>();
         </section>
 
         <section id="classic-gallery-view" class="view-pane hidden">
+          <div class="mb-6 flex flex-wrap items-center gap-3">
+            <label for="gallery-category-filter" class="text-sm text-zinc-400">Filter by type</label>
+            <select
+              id="gallery-category-filter"
+              class="rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-white focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+            >
+              <option value="all">All types</option>
+              {photoCategories.map((category) => <option value={category}>{category}</option>)}
+            </select>
+            <p id="gallery-filter-count" class="text-sm text-zinc-500" aria-live="polite">{photos.length} photos</p>
+          </div>
           <div id="classic-gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-3 auto-rows-[6px]">
             {photos.map((photo, idx) => (
               <a
@@ -427,14 +439,14 @@ const seenMonths = new Set<string>();
                 data-filename={photo.filename}
                 class="gallery-item masonry-item group relative block overflow-hidden rounded-xl border border-zinc-800 hover:border-violet-500/40 transition-all duration-300"
               >
-                <div class="masonry-content relative overflow-hidden">
+                <div class="masonry-content relative h-full overflow-hidden">
                   <Image
                     src={photo.image}
                     width={900}
                     format="webp"
                     quality={80}
                     alt={photo.alt}
-                    class="block w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                    class="block w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading={idx < 12 ? 'eager' : 'lazy'}
                   />
                   <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
@@ -605,7 +617,7 @@ const seenMonths = new Set<string>();
   function initLightbox() {
     const instance = new PhotoSwipeLightbox({
       gallery: '#gallery',
-      children: '.view-pane:not(.hidden) a.gallery-item',
+      children: '.view-pane:not(.hidden) a.gallery-item:not([hidden])',
       pswpModule: PhotoSwipe,
       bgOpacity: 0.95,
       showHideAnimationType: 'zoom',
@@ -655,6 +667,8 @@ const seenMonths = new Set<string>();
   const timelineView = document.getElementById('timeline-view');
   const classicGalleryView = document.getElementById('classic-gallery-view');
   const classicGalleryGrid = document.getElementById('classic-gallery-grid');
+  const galleryCategoryFilter = document.getElementById('gallery-category-filter');
+  const galleryFilterCount = document.getElementById('gallery-filter-count');
 
   function layoutClassicMasonry() {
     if (!classicGalleryView || !classicGalleryGrid || classicGalleryView.classList.contains('hidden')) return;
@@ -664,14 +678,34 @@ const seenMonths = new Set<string>();
     const rowGap = parseFloat(styles.getPropertyValue('row-gap'));
     if (!rowHeight || Number.isNaN(rowHeight)) return;
 
-    const items = classicGalleryGrid.querySelectorAll('.masonry-item');
+    const items = classicGalleryGrid.querySelectorAll('.masonry-item:not([hidden])');
     items.forEach((item) => {
-      const content = item.querySelector('.masonry-content');
-      if (!content) return;
-      const height = content.getBoundingClientRect().height;
+      const img = item.querySelector('img');
+      if (!img) return;
+      const width = img.getBoundingClientRect().width;
+      const ratio = img.naturalWidth ? img.naturalHeight / img.naturalWidth : 0;
+      if (!ratio) return;
+      const height = width * ratio;
       const span = Math.ceil((height + rowGap) / (rowHeight + rowGap));
       item.style.gridRowEnd = `span ${span}`;
     });
+  }
+
+  function filterClassicGallery() {
+    if (!galleryCategoryFilter || !classicGalleryGrid || !galleryFilterCount) return;
+
+    const selectedCategory = galleryCategoryFilter.value;
+    const items = classicGalleryGrid.querySelectorAll('.masonry-item');
+    let visibleCount = 0;
+
+    items.forEach((item) => {
+      const matches = selectedCategory === 'all' || item.dataset.category === selectedCategory;
+      item.hidden = !matches;
+      if (matches) visibleCount += 1;
+    });
+
+    galleryFilterCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'photo' : 'photos'}`;
+    requestAnimationFrame(layoutClassicMasonry);
   }
 
   function setView(mode) {
@@ -698,6 +732,7 @@ const seenMonths = new Set<string>();
 
   timelineViewBtn?.addEventListener('click', () => setView('timeline'));
   galleryViewBtn?.addEventListener('click', () => setView('gallery'));
+  galleryCategoryFilter?.addEventListener('change', filterClassicGallery);
 
   document.querySelectorAll('#classic-gallery-view img').forEach((img) => {
     if (!img.complete) {
