@@ -743,6 +743,66 @@
     "shutter": "1/3200",
     "iso": "1600"
   },
+  "wildlife-bunnyBigLeap.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-18",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "188mm",
+    "aperture": "f/4",
+    "shutter": "1/1000",
+    "iso": "640"
+  },
+  "wildlife-bunnyChase.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-18",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "184mm",
+    "aperture": "f/4",
+    "shutter": "1/1000",
+    "iso": "800"
+  },
+  "wildlife-bunnyJump.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-18",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "188mm",
+    "aperture": "f/4",
+    "shutter": "1/1000",
+    "iso": "640"
+  },
+  "wildlife-bunnyLeap.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-18",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "188mm",
+    "aperture": "f/4",
+    "shutter": "1/1000",
+    "iso": "640"
+  },
+  "wildlife-bunnySit.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-18",
+    "project": "Photo Collection",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "188mm",
+    "aperture": "f/4",
+    "shutter": "1/1000",
+    "iso": "640"
+  },
   "wildlife-ChillHeron.jpg": {
     "category": "Wildlife",
     "date": "2026-06-06",
