@@ -30,7 +30,7 @@
   "gearEvents": [
     {
       "date": "2026-10-12",
-      "Name": "Canon 70-200mm f/4 L",
+      "name": "Canon 70-200mm f/4 L",
       "description": "Sports lens",
       "icon": "lens"
     },
