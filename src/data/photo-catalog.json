@@ -623,8 +623,128 @@
     "shutter": "1/2000",
     "iso": "2500"
   },
+  "landscape/2026-10-17/553A2455.jpg": {
+    "category": "Landscape",
+    "date": "2026-10-17",
+    "project": "",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "200mm",
+    "aperture": "f/4",
+    "shutter": "1/640",
+    "iso": "320"
+  },
+  "landscape/2026-10-17/553A2492.jpg": {
+    "category": "Landscape",
+    "date": "2026-10-17",
+    "project": "",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "188mm",
+    "aperture": "f/4",
+    "shutter": "1/25",
+    "iso": "400"
+  },
+  "landscape/2026-10-17/553A2521.jpg": {
+    "category": "Landscape",
+    "date": "2026-10-17",
+    "project": "",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "200mm",
+    "aperture": "f/4",
+    "shutter": "1/1600",
+    "iso": "6400"
+  },
+  "landscape/2026-10-17/553A2549.jpg": {
+    "category": "Landscape",
+    "date": "2026-10-17",
+    "project": "",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "200mm",
+    "aperture": "f/4",
+    "shutter": "1/320",
+    "iso": "6400"
+  },
+  "landscape/2026-10-17/553A2556.jpg": {
+    "category": "Landscape",
+    "date": "2026-10-17",
+    "project": "",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "70mm",
+    "aperture": "f/4",
+    "shutter": "1/400",
+    "iso": "125"
+  },
+  "landscape/2026-10-17/553A2571.jpg": {
+    "category": "Landscape",
+    "date": "2026-10-17",
+    "project": "",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "91mm",
+    "aperture": "f/4",
+    "shutter": "1/500",
+    "iso": "640"
+  },
+  "landscape/2026-10-17/553A2582.jpg": {
+    "category": "Landscape",
+    "date": "2026-10-17",
+    "project": "",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "188mm",
+    "aperture": "f/4",
+    "shutter": "1/500",
+    "iso": "320"
+  },
+  "landscape/2026-10-17/553A2588.jpg": {
+    "category": "Landscape",
+    "date": "2026-10-17",
+    "project": "",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "70mm",
+    "aperture": "f/4",
+    "shutter": "1/15",
+    "iso": "1600"
+  },
+  "landscape/2026-10-17/553A2614.jpg": {
+    "category": "Landscape",
+    "date": "2026-10-17",
+    "project": "",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "70mm",
+    "aperture": "f/4",
+    "shutter": "1/40",
+    "iso": "800"
+  },
+  "landscape/2026-10-17/553A2624.jpg": {
+    "category": "Landscape",
+    "date": "2026-10-17",
+    "project": "",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "73mm",
+    "aperture": "f/4",
+    "shutter": "1/30",
+    "iso": "2000"
+  },
   "sport/2026-10-18-run-for-all/553A2664.jpg": {
-    "category": "553A2664.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -636,7 +756,7 @@
     "iso": "640"
   },
   "sport/2026-10-18-run-for-all/553A2706.jpg": {
-    "category": "553A2706.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -648,7 +768,7 @@
     "iso": "160"
   },
   "sport/2026-10-18-run-for-all/553A2765.jpg": {
-    "category": "553A2765.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -660,7 +780,7 @@
     "iso": "125"
   },
   "sport/2026-10-18-run-for-all/553A2825.jpg": {
-    "category": "553A2825.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -672,7 +792,7 @@
     "iso": "800"
   },
   "sport/2026-10-18-run-for-all/553A2826.jpg": {
-    "category": "553A2826.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -684,7 +804,7 @@
     "iso": "800"
   },
   "sport/2026-10-18-run-for-all/553A2840.jpg": {
-    "category": "553A2840.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -696,7 +816,7 @@
     "iso": "800"
   },
   "sport/2026-10-18-run-for-all/553A2879.jpg": {
-    "category": "553A2879.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -708,7 +828,7 @@
     "iso": "250"
   },
   "sport/2026-10-18-run-for-all/553A2886.jpg": {
-    "category": "553A2886.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -720,7 +840,7 @@
     "iso": "125"
   },
   "sport/2026-10-18-run-for-all/553A2918.jpg": {
-    "category": "553A2918.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -732,7 +852,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A2920.jpg": {
-    "category": "553A2920.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -744,7 +864,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A2926.jpg": {
-    "category": "553A2926.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -756,7 +876,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A2931.jpg": {
-    "category": "553A2931.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -768,7 +888,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A2961.jpg": {
-    "category": "553A2961.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -780,7 +900,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A2964.jpg": {
-    "category": "553A2964.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -792,7 +912,7 @@
     "iso": "250"
   },
   "sport/2026-10-18-run-for-all/553A2970.jpg": {
-    "category": "553A2970.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -804,7 +924,7 @@
     "iso": "200"
   },
   "sport/2026-10-18-run-for-all/553A2984.jpg": {
-    "category": "553A2984.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -816,7 +936,7 @@
     "iso": "250"
   },
   "sport/2026-10-18-run-for-all/553A3000.jpg": {
-    "category": "553A3000.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -828,7 +948,7 @@
     "iso": "100"
   },
   "sport/2026-10-18-run-for-all/553A3010.jpg": {
-    "category": "553A3010.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -840,7 +960,7 @@
     "iso": "640"
   },
   "sport/2026-10-18-run-for-all/553A3019.jpg": {
-    "category": "553A3019.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -852,7 +972,7 @@
     "iso": "500"
   },
   "sport/2026-10-18-run-for-all/553A3032.jpg": {
-    "category": "553A3032.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -864,7 +984,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3067.jpg": {
-    "category": "553A3067.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -876,7 +996,7 @@
     "iso": "250"
   },
   "sport/2026-10-18-run-for-all/553A3069.jpg": {
-    "category": "553A3069.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -888,7 +1008,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3072.jpg": {
-    "category": "553A3072.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -900,7 +1020,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3079.jpg": {
-    "category": "553A3079.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -912,7 +1032,7 @@
     "iso": "250"
   },
   "sport/2026-10-18-run-for-all/553A3085.jpg": {
-    "category": "553A3085.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -924,7 +1044,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3087.jpg": {
-    "category": "553A3087.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -936,7 +1056,7 @@
     "iso": "250"
   },
   "sport/2026-10-18-run-for-all/553A3090.jpg": {
-    "category": "553A3090.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -948,7 +1068,7 @@
     "iso": "400"
   },
   "sport/2026-10-18-run-for-all/553A3095.jpg": {
-    "category": "553A3095.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -960,7 +1080,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3113.jpg": {
-    "category": "553A3113.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -972,7 +1092,7 @@
     "iso": "200"
   },
   "sport/2026-10-18-run-for-all/553A3115.jpg": {
-    "category": "553A3115.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -984,7 +1104,7 @@
     "iso": "200"
   },
   "sport/2026-10-18-run-for-all/553A3133.jpg": {
-    "category": "553A3133.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -996,7 +1116,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3136.jpg": {
-    "category": "553A3136.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1008,7 +1128,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3140.jpg": {
-    "category": "553A3140.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1020,7 +1140,7 @@
     "iso": "400"
   },
   "sport/2026-10-18-run-for-all/553A3142.jpg": {
-    "category": "553A3142.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1032,7 +1152,7 @@
     "iso": "100"
   },
   "sport/2026-10-18-run-for-all/553A3146.jpg": {
-    "category": "553A3146.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1044,7 +1164,7 @@
     "iso": "250"
   },
   "sport/2026-10-18-run-for-all/553A3148.jpg": {
-    "category": "553A3148.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1056,7 +1176,7 @@
     "iso": "250"
   },
   "sport/2026-10-18-run-for-all/553A3156.jpg": {
-    "category": "553A3156.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1068,7 +1188,7 @@
     "iso": "160"
   },
   "sport/2026-10-18-run-for-all/553A3161.jpg": {
-    "category": "553A3161.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1080,7 +1200,7 @@
     "iso": "100"
   },
   "sport/2026-10-18-run-for-all/553A3162.jpg": {
-    "category": "553A3162.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1092,7 +1212,7 @@
     "iso": "100"
   },
   "sport/2026-10-18-run-for-all/553A3173.jpg": {
-    "category": "553A3173.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1104,7 +1224,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3178.jpg": {
-    "category": "553A3178.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1116,7 +1236,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3182.jpg": {
-    "category": "553A3182.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1128,7 +1248,7 @@
     "iso": "500"
   },
   "sport/2026-10-18-run-for-all/553A3184.jpg": {
-    "category": "553A3184.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1140,7 +1260,7 @@
     "iso": "500"
   },
   "sport/2026-10-18-run-for-all/553A3186.jpg": {
-    "category": "553A3186.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1152,7 +1272,7 @@
     "iso": "500"
   },
   "sport/2026-10-18-run-for-all/553A3190.jpg": {
-    "category": "553A3190.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1164,7 +1284,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3195.jpg": {
-    "category": "553A3195.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1176,7 +1296,7 @@
     "iso": "400"
   },
   "sport/2026-10-18-run-for-all/553A3201.jpg": {
-    "category": "553A3201.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1188,7 +1308,7 @@
     "iso": "400"
   },
   "sport/2026-10-18-run-for-all/553A3215.jpg": {
-    "category": "553A3215.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1200,7 +1320,7 @@
     "iso": "640"
   },
   "sport/2026-10-18-run-for-all/553A3267.jpg": {
-    "category": "553A3267.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1212,7 +1332,7 @@
     "iso": "400"
   },
   "sport/2026-10-18-run-for-all/553A3281.jpg": {
-    "category": "553A3281.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1224,7 +1344,7 @@
     "iso": "500"
   },
   "sport/2026-10-18-run-for-all/553A3283.jpg": {
-    "category": "553A3283.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1236,7 +1356,7 @@
     "iso": "500"
   },
   "sport/2026-10-18-run-for-all/553A3298.jpg": {
-    "category": "553A3298.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1248,7 +1368,7 @@
     "iso": "125"
   },
   "sport/2026-10-18-run-for-all/553A3308.jpg": {
-    "category": "553A3308.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1260,7 +1380,7 @@
     "iso": "800"
   },
   "sport/2026-10-18-run-for-all/553A3331.jpg": {
-    "category": "553A3331.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1272,7 +1392,7 @@
     "iso": "3200"
   },
   "sport/2026-10-18-run-for-all/553A3344.jpg": {
-    "category": "553A3344.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1284,7 +1404,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3356.jpg": {
-    "category": "553A3356.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1296,7 +1416,7 @@
     "iso": "640"
   },
   "sport/2026-10-18-run-for-all/553A3372.jpg": {
-    "category": "553A3372.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1308,7 +1428,7 @@
     "iso": "800"
   },
   "sport/2026-10-18-run-for-all/553A3401.jpg": {
-    "category": "553A3401.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1320,7 +1440,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3409.jpg": {
-    "category": "553A3409.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1332,7 +1452,7 @@
     "iso": "500"
   },
   "sport/2026-10-18-run-for-all/553A3413.jpg": {
-    "category": "553A3413.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1344,7 +1464,7 @@
     "iso": "400"
   },
   "sport/2026-10-18-run-for-all/553A3441.jpg": {
-    "category": "553A3441.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1356,7 +1476,7 @@
     "iso": "250"
   },
   "sport/2026-10-18-run-for-all/553A3457.jpg": {
-    "category": "553A3457.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1368,7 +1488,7 @@
     "iso": "640"
   },
   "sport/2026-10-18-run-for-all/553A3477.jpg": {
-    "category": "553A3477.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1380,7 +1500,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3501.jpg": {
-    "category": "553A3501.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1392,7 +1512,7 @@
     "iso": "500"
   },
   "sport/2026-10-18-run-for-all/553A3510.jpg": {
-    "category": "553A3510.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1404,7 +1524,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3533.jpg": {
-    "category": "553A3533.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1416,7 +1536,7 @@
     "iso": "100"
   },
   "sport/2026-10-18-run-for-all/553A3550.jpg": {
-    "category": "553A3550.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1428,7 +1548,7 @@
     "iso": "100"
   },
   "sport/2026-10-18-run-for-all/553A3564.jpg": {
-    "category": "553A3564.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1440,7 +1560,7 @@
     "iso": "100"
   },
   "sport/2026-10-18-run-for-all/553A3596.jpg": {
-    "category": "553A3596.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1452,7 +1572,7 @@
     "iso": "160"
   },
   "sport/2026-10-18-run-for-all/553A3597.jpg": {
-    "category": "553A3597.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1464,7 +1584,7 @@
     "iso": "160"
   },
   "sport/2026-10-18-run-for-all/553A3609.jpg": {
-    "category": "553A3609.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1476,7 +1596,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3617.jpg": {
-    "category": "553A3617.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1488,7 +1608,7 @@
     "iso": "160"
   },
   "sport/2026-10-18-run-for-all/553A3622.jpg": {
-    "category": "553A3622.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1500,7 +1620,7 @@
     "iso": "100"
   },
   "sport/2026-10-18-run-for-all/553A3634.jpg": {
-    "category": "553A3634.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1512,7 +1632,7 @@
     "iso": "100"
   },
   "sport/2026-10-18-run-for-all/553A3665.jpg": {
-    "category": "553A3665.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1524,7 +1644,7 @@
     "iso": "100"
   },
   "sport/2026-10-18-run-for-all/553A3673.jpg": {
-    "category": "553A3673.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1536,7 +1656,7 @@
     "iso": "250"
   },
   "sport/2026-10-18-run-for-all/553A3683.jpg": {
-    "category": "553A3683.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1548,7 +1668,7 @@
     "iso": "400"
   },
   "sport/2026-10-18-run-for-all/553A3694.jpg": {
-    "category": "553A3694.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1560,7 +1680,7 @@
     "iso": "125"
   },
   "sport/2026-10-18-run-for-all/553A3717.jpg": {
-    "category": "553A3717.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1572,7 +1692,7 @@
     "iso": "100"
   },
   "sport/2026-10-18-run-for-all/553A3727.jpg": {
-    "category": "553A3727.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1584,7 +1704,7 @@
     "iso": "400"
   },
   "sport/2026-10-18-run-for-all/553A3755.jpg": {
-    "category": "553A3755.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -1596,7 +1716,7 @@
     "iso": "320"
   },
   "sport/2026-10-18-run-for-all/553A3758.jpg": {
-    "category": "553A3758.jpg",
+    "category": "Sport",
     "date": "2026-10-18",
     "project": "Run For All",
     "location": "Unknown",
@@ -2278,6 +2398,18 @@
     "aperture": "f/8",
     "shutter": "1/2000",
     "iso": "640"
+  },
+  "wildlife/2026-10-17/553A2465.jpg": {
+    "category": "Wildlife",
+    "date": "2026-10-17",
+    "project": "",
+    "location": "Unknown",
+    "camera": "Canon EOS R7",
+    "lens": "EF70-200mm f/4L USM",
+    "focalLength": "200mm",
+    "aperture": "f/4",
+    "shutter": "1/640",
+    "iso": "4000"
   },
   "wildlife/2026-10-18/wildlife-bunnyBigLeap.jpg": {
     "category": "Wildlife",

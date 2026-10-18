@@ -158,8 +158,14 @@ const genericPhotoGroups: PhotoGroup[] = Array.from(genericDateGroupMap.entries(
   const sorted = [...groupPhotos].sort((a, b) => b.dateTs - a.dateTs || a.alt.localeCompare(b.alt));
   const first = sorted[0];
   const locations = [...new Set(groupPhotos.map((p) => p.location).filter((l) => l !== 'Unknown'))];
-  const categories = [...new Set(groupPhotos.map((p) => p.category))];
-  const categoryLabel = categories.length <= 1 ? (categories[0] ?? 'Unknown') : `${categories[0]} +${categories.length - 1}`;
+  const categoryCounts = new Map<string, number>();
+  groupPhotos.forEach((p) => categoryCounts.set(p.category, (categoryCounts.get(p.category) ?? 0) + 1));
+  const rankedCategories = [...categoryCounts.entries()].sort((a, b) => b[1] - a[1]);
+  const categoryLabel = rankedCategories.length === 0
+    ? 'Unknown'
+    : rankedCategories.length === 1
+      ? rankedCategories[0][0]
+      : `${rankedCategories[0][0]} +${rankedCategories.length - 1}`;
 
   return {
     type: 'photo-group' as const,

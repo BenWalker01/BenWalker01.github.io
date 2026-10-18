@@ -29,8 +29,9 @@ function toText(value) {
   return text === '' ? 'Unknown' : text;
 }
 
-function toCategory(filename) {
-  const prefix = filename.split('-')[0] ?? '';
+function toCategory(photoKey) {
+  const parts = toPhotoKey(photoKey).split('/');
+  const prefix = parts.length > 1 ? parts[0] : (parts[0].split('-')[0] ?? '');
   return prefix ? `${prefix.charAt(0).toUpperCase()}${prefix.slice(1)}` : 'Unknown';
 }
 
@@ -169,7 +170,7 @@ function main() {
       fallbackDate(photoKey);
 
     next[toPhotoKey(photoKey)] = {
-      category: toText(prev.category ?? toCategory(filename)),
+      category: toText(toCategory(photoKey)),
       date: toText(date),
       project: eventFromFolder(photoKey, namedEvents),
       location: toText(prev.location ?? 'Unknown'),
