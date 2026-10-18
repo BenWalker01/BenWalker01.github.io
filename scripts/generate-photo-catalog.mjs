@@ -7,6 +7,7 @@ import { spawnSync } from 'child_process';
 const ROOT = process.cwd();
 const PHOTOS_DIR = path.resolve(ROOT, 'src/assets/photos');
 const CATALOG_PATH = path.resolve(ROOT, 'src/data/photo-catalog.json');
+const TIMELINE_PATH = path.resolve(ROOT, 'src/data/timeline-events.json');
 const IMAGE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.webp', '.avif']);
 
 const EXIF_FIELDS = [
@@ -35,6 +36,30 @@ function toCategory(filename) {
 
 function toPhotoKey(filename) {
   return filename.split(path.sep).join('/');
+}
+
+function toSlug(value) {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function titleFromSlug(value) {
+  return value
+    .split('-')
+    .filter(Boolean)
+    .map((word) => `${word.charAt(0).toUpperCase()}${word.slice(1)}`)
+    .join(' ');
+}
+
+function eventFromFolder(photoKey, namedEvents) {
+  const directories = path.dirname(photoKey).split(path.sep);
+  const shootFolder = directories.find((directory) => /^\d{4}-\d{2}-\d{2}(?:-|$)/.test(directory));
+  if (!shootFolder) return '';
+
+  const eventSlug = shootFolder.replace(/^\d{4}-\d{2}-\d{2}-?/, '');
+  if (!eventSlug) return '';
+
+  const namedEvent = Object.keys(namedEvents).find((name) => toSlug(name) === eventSlug);
+  return namedEvent ?? titleFromSlug(eventSlug);
 }
 
 function findPhotos(directory, parent = '') {
@@ -121,6 +146,8 @@ function main() {
   const fullPaths = photos.map((name) => path.join(PHOTOS_DIR, name));
   const exifRows = runExiftool(fullPaths);
   const existing = readCatalog();
+  const timelineConfig = JSON.parse(readFileSync(TIMELINE_PATH, 'utf8'));
+  const namedEvents = timelineConfig.namedEvents ?? {};
   const byPhotoKey = new Map(
     exifRows.map((row) => [
       toPhotoKey(path.relative(PHOTOS_DIR, String(row.SourceFile || ''))),
@@ -144,7 +171,7 @@ function main() {
     next[toPhotoKey(photoKey)] = {
       category: toText(prev.category ?? toCategory(filename)),
       date: toText(date),
-      project: toText(prev.project ?? 'Photo Collection'),
+      project: eventFromFolder(photoKey, namedEvents),
       location: toText(prev.location ?? 'Unknown'),
       camera: toText(row.Model ?? prev.camera),
       lens: toText(row.LensModel ?? prev.lens),

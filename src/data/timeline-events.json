@@ -19,9 +19,21 @@
       "displayName": "RAF Fairford",
       "description": "Trip to see the Bones at Fairford",
       "tags": ["Aviation", "B1", "USAF"]
+    },
+    "Run For All" :
+    {
+      "displayName": "Run For All",
+      "description": "Marathon and 10 mile run around York",
+      "tags": ["Sports", "York"]
     }
   },
   "gearEvents": [
+    {
+      "date": "2026-10-12",
+      "Name": "Canon 70-200mm f/4 L",
+      "description": "Sports lens",
+      "icon": "lens"
+    },
     {
       "date": "2026-09-02",
       "name": "Canon R7",
